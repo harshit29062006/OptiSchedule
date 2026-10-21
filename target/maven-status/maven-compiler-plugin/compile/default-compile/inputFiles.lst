@@ -1,0 +1,17 @@
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/Main.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/engine/ConflictChecker.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/engine/Schedulable.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/exception/FacultyOverloadException.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/exception/RoomUnavailableException.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/exception/SchedulingException.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/exception/SlotConflictException.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/model/Booking.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/model/Course.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/model/Day.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/model/Faculty.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/model/PeriodType.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/model/Room.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/model/RoomType.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/model/Section.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/model/TimeSlot.java
+/Users/harshitgoyal/Downloads/project-skeleton/src/main/java/com/university/scheduler/util/FacultyLoadComparator.java
