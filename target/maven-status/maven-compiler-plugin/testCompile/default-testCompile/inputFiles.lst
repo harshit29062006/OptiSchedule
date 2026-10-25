@@ -1,2 +1,3 @@
-/Users/harshitgoyal/Downloads/project-skeleton/src/test/java/com/university/scheduler/engine/ConflictCheckerTest.java
-/Users/harshitgoyal/Downloads/project-skeleton/src/test/java/com/university/scheduler/model/TimeSlotTest.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/ConflictCheckerTest.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/CsvBookingSourceTest.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/model/TimeSlotTest.java
