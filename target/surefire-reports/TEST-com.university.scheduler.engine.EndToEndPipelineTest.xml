@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.university.scheduler.engine.EndToEndPipelineTest" time="0.132" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.university.scheduler.engine.EndToEndPipelineTest" time="0.156" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/surefire/surefirebooter-20261026140107813_3.jar /Users/harshitgoyal/Desktop/OptiSchedule/target/surefire 2026-10-26T14-01-07_768-jvmRun1 surefire-20261026140107813_1tmp surefire_0-20261026140107813_2tmp"/>
+    <property name="sun.java.command" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/surefire/surefirebooter-20261026161843703_3.jar /Users/harshitgoyal/Desktop/OptiSchedule/target/surefire 2026-10-26T16-18-43_658-jvmRun1 surefire-20261026161843703_1tmp surefire_0-20261026161843703_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/test-classes:/Users/harshitgoyal/Desktop/OptiSchedule/target/classes:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2-mac-aarch64.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2-mac-aarch64.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2-mac-aarch64.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2-mac-aarch64.jar:/Users/harshitgoyal/.m2/repository/com/mysql/mysql-connector-j/8.4.0/mysql-connector-j-8.4.0.jar:/Users/harshitgoyal/.m2/repository/com/google/protobuf/protobuf-java/3.25.1/protobuf-java-3.25.1.jar:/Users/harshitgoyal/.m2/repository/org/apache/logging/log4j/log4j-core/2.23.1/log4j-core-2.23.1.jar:/Users/harshitgoyal/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/harshitgoyal/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/harshitgoyal/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/harshitgoyal/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/harshitgoyal/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/harshitgoyal/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/harshitgoyal/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/harshitgoyal/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/harshitgoyal/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/surefire/surefirebooter-20261026140107813_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/surefire/surefirebooter-20261026161843703_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.12+7-LTS-205"/>
@@ -57,309 +57,47 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="fullPipelineFacultyLoadsAreInternallyConsistent" classname="com.university.scheduler.engine.EndToEndPipelineTest" time="0.062">
-    <system-out><![CDATA[Conflict skipped: Room RCH-RA already booked at TUESDAY P6 @12:10 (existing: 1A3C, new: 1A8C)
+  <testcase name="fullPipelineFacultyLoadsAreInternallyConsistent" classname="com.university.scheduler.engine.EndToEndPipelineTest" time="0.066">
+    <system-out><![CDATA[Conflict skipped: Room L007 already booked at TUESDAY P10 @15:30 (existing: 1A1E, new: 1X2B)
+Conflict skipped: Faculty RCH-RA already teaching at TUESDAY P6 @12:10 (existing: 1A3C, new: 1A8C)
 Conflict skipped: Room LP102 already booked at TUESDAY P7 @13:00 (existing: 1A6A, new: 1A5A)
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Room B105/H221 already booked at WEDNESDAY P8 @13:50 (existing: 1A4C, new: 1A3E)
-Conflict skipped: Room C201/H222 already booked at WEDNESDAY P8 @13:50 (existing: 1A4D, new: 1A3F)
+Conflict skipped: Room H222 already booked at WEDNESDAY P8 @13:50 (existing: 1A1E, new: 1A2D)
+Conflict skipped: Room B105 already booked at WEDNESDAY P8 @13:50 (existing: 1A4C, new: 1A3E)
+Conflict skipped: Room C201 already booked at WEDNESDAY P8 @13:50 (existing: 1A4D, new: 1A3F)
 Conflict skipped: Room E311 already booked at WEDNESDAY P8 @13:50 (existing: 1A4A, new: 1A4E)
 Conflict skipped: Room LP102 already booked at WEDNESDAY P8 @13:50 (existing: 1A5A, new: 1A7A)
 Conflict skipped: Room LP103 already booked at WEDNESDAY P8 @13:50 (existing: 1C1A, new: 1A8A)
-Conflict skipped: Room PL-1(L007) already booked at WEDNESDAY P8 @13:50 (existing: 1A1A, new: 1A9C)
-Conflict skipped: Room CBOL(G141) already booked at WEDNESDAY P8 @13:50 (existing: 1X2B, new: 1X1C)
-Conflict skipped: Room PL-2(L008) already booked at WEDNESDAY P8 @13:50 (existing: 1A1B, new: 1X1D)
+Conflict skipped: Room L007 already booked at WEDNESDAY P8 @13:50 (existing: 1A1A, new: 1A9C)
+Conflict skipped: Room G141 already booked at WEDNESDAY P8 @13:50 (existing: 1X2B, new: 1X1C)
+Conflict skipped: Room L008 already booked at WEDNESDAY P8 @13:50 (existing: 1A1B, new: 1X1D)
 Conflict skipped: Room E311 already booked at WEDNESDAY P9 @14:40 (existing: 1A4A, new: 1A4E)
 Conflict skipped: Room LP102 already booked at WEDNESDAY P9 @14:40 (existing: 1A5A, new: 1A5A)
 Conflict skipped: Room LP103 already booked at WEDNESDAY P9 @14:40 (existing: 1C1A, new: 1A8A)
 Conflict skipped: Room T105 already booked at WEDNESDAY P9 @14:40 (existing: 1X1A, new: 1X2A)
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty PL-1(L007) would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty PL-2(L008) would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty PL-1(L007) would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty PL-2(L008) would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room LC11 already booked at MONDAY P4 @10:30 (existing: 1B52, new: 1B91)
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room LT102 already booked at TUESDAY P11 @16:20 (existing: 1B61, new: 1D11)
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room LP104 already booked at TUESDAY P7 @13:00 (existing: 1B71, new: 1B41)
 Conflict skipped: Room LT101 already booked at WEDNESDAY P10 @15:30 (existing: 1B61, new: 1D11)
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Room RKU already booked at WEDNESDAY P6 @12:10 (existing: 1R12, new: 1R13)
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty RKU already teaching at WEDNESDAY P6 @12:10 (existing: 1R12, new: 1R13)
 Conflict skipped: Room G325 already booked at WEDNESDAY P8 @13:50 (existing: 1J11, new: 1B44)
 Conflict skipped: Room G310 already booked at WEDNESDAY P8 @13:50 (existing: 1B84, new: 1B45)
+Conflict skipped: Room D102 already booked at WEDNESDAY P8 @13:50 (existing: 1B23, new: 1B54)
 Conflict skipped: Room G312 already booked at WEDNESDAY P8 @13:50 (existing: 1B83, new: 1B64)
 Conflict skipped: Room LP105 already booked at WEDNESDAY P8 @13:50 (existing: 1B61, new: 1B81)
 Conflict skipped: Room E312 already booked at WEDNESDAY P8 @13:50 (existing: 1B91, new: 1B92)
 Conflict skipped: Room C309 already booked at WEDNESDAY P8 @13:50 (existing: 1R11, new: 1D13)
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room T303 already booked at WEDNESDAY P9 @14:40 (existing: 1B28, new: 1B42)
 Conflict skipped: Room LC11 already booked at WEDNESDAY P9 @14:40 (existing: 1D12, new: 1B44)
 Conflict skipped: Room E301 already booked at WEDNESDAY P9 @14:40 (existing: 1B91, new: 1B63)
 Conflict skipped: Room LP105 already booked at WEDNESDAY P9 @14:40 (existing: 1B61, new: 1B81)
 Conflict skipped: Room E306 already booked at WEDNESDAY P9 @14:40 (existing: 1B81, new: 1B92)
 Conflict skipped: Room LC14 already booked at WEDNESDAY P9 @14:40 (existing: 1D11, new: 1D13)
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room G325 already booked at THURSDAY P10 @15:30 (existing: 1B61, new: 1B65)
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room LT101 already booked at THURSDAY P3 @09:40 (existing: 1B61, new: 1D11)
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room F312 already booked at THURSDAY P5 @11:20 (existing: 1B38, new: 1B75)
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E301 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E301 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room F310 already booked at FRIDAY P1 @08:00 (existing: 1B81, new: 1B92)
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E301 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G325 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G310 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty F311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G325 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty F311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G325 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Loaded 1166 bookings successfully, 300 rows rejected due to conflicts, out of 1466 total rows read.
-Integration check: 319 distinct faculty discovered, 25 at or above 90% of their weekly limit.
+Loaded 1428 bookings successfully, 38 rows rejected due to conflicts, out of 1466 total rows read.
+Integration check: 1210 distinct faculty discovered, 1 at or above 90% of their weekly limit.
 ]]></system-out>
     <system-err><![CDATA[Line 715: skipping unparseable row (Unknown period type suffix: `)
 Line 748: skipping unparseable row (Unknown period type suffix: 7)
@@ -439,309 +177,47 @@ Line 1529: skipping unparseable row (Unknown period type suffix: S)
 Line 1557: skipping unparseable row (Unknown period type suffix: S)
 ]]></system-err>
   </testcase>
-  <testcase name="fullPipelineLoadsRealDataAndProducesSaneUtilization" classname="com.university.scheduler.engine.EndToEndPipelineTest" time="0.069">
-    <system-out><![CDATA[Conflict skipped: Room RCH-RA already booked at TUESDAY P6 @12:10 (existing: 1A3C, new: 1A8C)
+  <testcase name="fullPipelineLoadsRealDataAndProducesSaneUtilization" classname="com.university.scheduler.engine.EndToEndPipelineTest" time="0.087">
+    <system-out><![CDATA[Conflict skipped: Room L007 already booked at TUESDAY P10 @15:30 (existing: 1A1E, new: 1X2B)
+Conflict skipped: Faculty RCH-RA already teaching at TUESDAY P6 @12:10 (existing: 1A3C, new: 1A8C)
 Conflict skipped: Room LP102 already booked at TUESDAY P7 @13:00 (existing: 1A6A, new: 1A5A)
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Room B105/H221 already booked at WEDNESDAY P8 @13:50 (existing: 1A4C, new: 1A3E)
-Conflict skipped: Room C201/H222 already booked at WEDNESDAY P8 @13:50 (existing: 1A4D, new: 1A3F)
+Conflict skipped: Room H222 already booked at WEDNESDAY P8 @13:50 (existing: 1A1E, new: 1A2D)
+Conflict skipped: Room B105 already booked at WEDNESDAY P8 @13:50 (existing: 1A4C, new: 1A3E)
+Conflict skipped: Room C201 already booked at WEDNESDAY P8 @13:50 (existing: 1A4D, new: 1A3F)
 Conflict skipped: Room E311 already booked at WEDNESDAY P8 @13:50 (existing: 1A4A, new: 1A4E)
 Conflict skipped: Room LP102 already booked at WEDNESDAY P8 @13:50 (existing: 1A5A, new: 1A7A)
 Conflict skipped: Room LP103 already booked at WEDNESDAY P8 @13:50 (existing: 1C1A, new: 1A8A)
-Conflict skipped: Room PL-1(L007) already booked at WEDNESDAY P8 @13:50 (existing: 1A1A, new: 1A9C)
-Conflict skipped: Room CBOL(G141) already booked at WEDNESDAY P8 @13:50 (existing: 1X2B, new: 1X1C)
-Conflict skipped: Room PL-2(L008) already booked at WEDNESDAY P8 @13:50 (existing: 1A1B, new: 1X1D)
+Conflict skipped: Room L007 already booked at WEDNESDAY P8 @13:50 (existing: 1A1A, new: 1A9C)
+Conflict skipped: Room G141 already booked at WEDNESDAY P8 @13:50 (existing: 1X2B, new: 1X1C)
+Conflict skipped: Room L008 already booked at WEDNESDAY P8 @13:50 (existing: 1A1B, new: 1X1D)
 Conflict skipped: Room E311 already booked at WEDNESDAY P9 @14:40 (existing: 1A4A, new: 1A4E)
 Conflict skipped: Room LP102 already booked at WEDNESDAY P9 @14:40 (existing: 1A5A, new: 1A5A)
 Conflict skipped: Room LP103 already booked at WEDNESDAY P9 @14:40 (existing: 1C1A, new: 1A8A)
 Conflict skipped: Room T105 already booked at WEDNESDAY P9 @14:40 (existing: 1X1A, new: 1X2A)
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty PL-1(L007) would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty PL-2(L008) would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty PL-1(L007) would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty PL-2(L008) would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room LC11 already booked at MONDAY P4 @10:30 (existing: 1B52, new: 1B91)
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room LT102 already booked at TUESDAY P11 @16:20 (existing: 1B61, new: 1D11)
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room LP104 already booked at TUESDAY P7 @13:00 (existing: 1B71, new: 1B41)
 Conflict skipped: Room LT101 already booked at WEDNESDAY P10 @15:30 (existing: 1B61, new: 1D11)
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Room RKU already booked at WEDNESDAY P6 @12:10 (existing: 1R12, new: 1R13)
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty RKU already teaching at WEDNESDAY P6 @12:10 (existing: 1R12, new: 1R13)
 Conflict skipped: Room G325 already booked at WEDNESDAY P8 @13:50 (existing: 1J11, new: 1B44)
 Conflict skipped: Room G310 already booked at WEDNESDAY P8 @13:50 (existing: 1B84, new: 1B45)
+Conflict skipped: Room D102 already booked at WEDNESDAY P8 @13:50 (existing: 1B23, new: 1B54)
 Conflict skipped: Room G312 already booked at WEDNESDAY P8 @13:50 (existing: 1B83, new: 1B64)
 Conflict skipped: Room LP105 already booked at WEDNESDAY P8 @13:50 (existing: 1B61, new: 1B81)
 Conflict skipped: Room E312 already booked at WEDNESDAY P8 @13:50 (existing: 1B91, new: 1B92)
 Conflict skipped: Room C309 already booked at WEDNESDAY P8 @13:50 (existing: 1R11, new: 1D13)
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room T303 already booked at WEDNESDAY P9 @14:40 (existing: 1B28, new: 1B42)
 Conflict skipped: Room LC11 already booked at WEDNESDAY P9 @14:40 (existing: 1D12, new: 1B44)
 Conflict skipped: Room E301 already booked at WEDNESDAY P9 @14:40 (existing: 1B91, new: 1B63)
 Conflict skipped: Room LP105 already booked at WEDNESDAY P9 @14:40 (existing: 1B61, new: 1B81)
 Conflict skipped: Room E306 already booked at WEDNESDAY P9 @14:40 (existing: 1B81, new: 1B92)
 Conflict skipped: Room LC14 already booked at WEDNESDAY P9 @14:40 (existing: 1D11, new: 1D13)
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room G325 already booked at THURSDAY P10 @15:30 (existing: 1B61, new: 1B65)
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room LT101 already booked at THURSDAY P3 @09:40 (existing: 1B61, new: 1D11)
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room F312 already booked at THURSDAY P5 @11:20 (existing: 1B38, new: 1B75)
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E301 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E301 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room F310 already booked at FRIDAY P1 @08:00 (existing: 1B81, new: 1B92)
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E301 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G325 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G310 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty F311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G325 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty F311 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G325 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty G312 would exceed max hours/week (18); currently at 18
-Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
-Loaded 1166 bookings successfully, 300 rows rejected due to conflicts, out of 1466 total rows read.
-Integration check: 1166 real bookings loaded, 319 distinct rooms discovered, average utilization 4.4% (see known limitation note in test javadoc).
+Loaded 1428 bookings successfully, 38 rows rejected due to conflicts, out of 1466 total rows read.
+Integration check: 1428 real bookings loaded, 491 distinct rooms discovered, average utilization 3.5% (see known limitation note in test javadoc).
 ]]></system-out>
     <system-err><![CDATA[Line 715: skipping unparseable row (Unknown period type suffix: `)
 Line 748: skipping unparseable row (Unknown period type suffix: 7)
