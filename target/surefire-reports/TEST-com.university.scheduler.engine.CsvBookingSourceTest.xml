@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.university.scheduler.engine.CsvBookingSourceTest" time="0.075" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.university.scheduler.engine.CsvBookingSourceTest" time="0.013" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/surefire/surefirebooter-20261025225645509_3.jar /Users/harshitgoyal/Desktop/OptiSchedule/target/surefire 2026-10-25T22-56-45_454-jvmRun1 surefire-20261025225645509_1tmp surefire_0-20261025225645509_2tmp"/>
+    <property name="sun.java.command" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/surefire/surefirebooter-20261026140107813_3.jar /Users/harshitgoyal/Desktop/OptiSchedule/target/surefire 2026-10-26T14-01-07_768-jvmRun1 surefire-20261026140107813_1tmp surefire_0-20261026140107813_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/test-classes:/Users/harshitgoyal/Desktop/OptiSchedule/target/classes:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2-mac-aarch64.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2-mac-aarch64.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2-mac-aarch64.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2-mac-aarch64.jar:/Users/harshitgoyal/.m2/repository/com/mysql/mysql-connector-j/8.4.0/mysql-connector-j-8.4.0.jar:/Users/harshitgoyal/.m2/repository/com/google/protobuf/protobuf-java/3.25.1/protobuf-java-3.25.1.jar:/Users/harshitgoyal/.m2/repository/org/apache/logging/log4j/log4j-core/2.23.1/log4j-core-2.23.1.jar:/Users/harshitgoyal/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/harshitgoyal/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/harshitgoyal/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/harshitgoyal/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/harshitgoyal/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/harshitgoyal/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/harshitgoyal/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/harshitgoyal/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/harshitgoyal/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/surefire/surefirebooter-20261025225645509_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/surefire/surefirebooter-20261026140107813_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.12+7-LTS-205"/>
@@ -57,8 +57,32 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="loadsRealDataWithoutCrashing" classname="com.university.scheduler.engine.CsvBookingSourceTest" time="0.073">
-    <system-out><![CDATA[Conflict skipped: Room LP102 already booked at TUESDAY P7 @13:00 (existing: 1A6A, new: 1A5A)
+  <testcase name="loadsRealDataWithoutCrashing" classname="com.university.scheduler.engine.CsvBookingSourceTest" time="0.012">
+    <system-out><![CDATA[Conflict skipped: Room RCH-RA already booked at TUESDAY P6 @12:10 (existing: 1A3C, new: 1A8C)
+Conflict skipped: Room LP102 already booked at TUESDAY P7 @13:00 (existing: 1A6A, new: 1A5A)
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room B105/H221 already booked at WEDNESDAY P8 @13:50 (existing: 1A4C, new: 1A3E)
 Conflict skipped: Room C201/H222 already booked at WEDNESDAY P8 @13:50 (existing: 1A4D, new: 1A3F)
 Conflict skipped: Room E311 already booked at WEDNESDAY P8 @13:50 (existing: 1A4A, new: 1A4E)
@@ -71,527 +95,347 @@ Conflict skipped: Room E311 already booked at WEDNESDAY P9 @14:40 (existing: 1A4
 Conflict skipped: Room LP102 already booked at WEDNESDAY P9 @14:40 (existing: 1A5A, new: 1A5A)
 Conflict skipped: Room LP103 already booked at WEDNESDAY P9 @14:40 (existing: 1C1A, new: 1A8A)
 Conflict skipped: Room T105 already booked at WEDNESDAY P9 @14:40 (existing: 1X1A, new: 1X2A)
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty PL-1(L007) would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty PL-2(L008) would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty PL-1(L007) would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty PL-2(L008) would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E305 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP102 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E304 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Room LC11 already booked at MONDAY P4 @10:30 (existing: 1B52, new: 1B91)
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP101 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room LT102 already booked at TUESDAY P11 @16:20 (existing: 1B61, new: 1D11)
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room LP104 already booked at TUESDAY P7 @13:00 (existing: 1B71, new: 1B41)
 Conflict skipped: Room LT101 already booked at WEDNESDAY P10 @15:30 (existing: 1B61, new: 1D11)
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Room RKU already booked at WEDNESDAY P6 @12:10 (existing: 1R12, new: 1R13)
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room G325 already booked at WEDNESDAY P8 @13:50 (existing: 1J11, new: 1B44)
 Conflict skipped: Room G310 already booked at WEDNESDAY P8 @13:50 (existing: 1B84, new: 1B45)
 Conflict skipped: Room G312 already booked at WEDNESDAY P8 @13:50 (existing: 1B83, new: 1B64)
 Conflict skipped: Room LP105 already booked at WEDNESDAY P8 @13:50 (existing: 1B61, new: 1B81)
 Conflict skipped: Room E312 already booked at WEDNESDAY P8 @13:50 (existing: 1B91, new: 1B92)
 Conflict skipped: Room C309 already booked at WEDNESDAY P8 @13:50 (existing: 1R11, new: 1D13)
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room T303 already booked at WEDNESDAY P9 @14:40 (existing: 1B28, new: 1B42)
+Conflict skipped: Room LC11 already booked at WEDNESDAY P9 @14:40 (existing: 1D12, new: 1B44)
 Conflict skipped: Room E301 already booked at WEDNESDAY P9 @14:40 (existing: 1B91, new: 1B63)
 Conflict skipped: Room LP105 already booked at WEDNESDAY P9 @14:40 (existing: 1B61, new: 1B81)
 Conflict skipped: Room E306 already booked at WEDNESDAY P9 @14:40 (existing: 1B81, new: 1B92)
+Conflict skipped: Room LC14 already booked at WEDNESDAY P9 @14:40 (existing: 1D11, new: 1D13)
+Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room G325 already booked at THURSDAY P10 @15:30 (existing: 1B61, new: 1B65)
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room LT101 already booked at THURSDAY P3 @09:40 (existing: 1B61, new: 1D11)
+Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room F312 already booked at THURSDAY P5 @11:20 (existing: 1B38, new: 1B75)
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E301 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E301 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty G312 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
 Conflict skipped: Room F310 already booked at FRIDAY P1 @08:00 (existing: 1B81, new: 1B92)
-Loaded 1011 bookings successfully, 30 rows rejected due to conflicts, out of 1041 total rows read.
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E301 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty G325 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty G312 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty G310 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty F311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty G325 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LT103 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty F311 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty G325 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty E312 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty G312 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T302 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP104 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty T303 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty G312 would exceed max hours/week (18); currently at 18
+Conflict skipped: Faculty LP105 would exceed max hours/week (18); currently at 18
+Loaded 1166 bookings successfully, 300 rows rejected due to conflicts, out of 1466 total rows read.
 ]]></system-out>
-    <system-err><![CDATA[Line 10: skipping unparseable row (Text '8:50:AM' could not be parsed at index 0)
-Line 11: skipping unparseable row (Text '8:50:AM' could not be parsed at index 0)
-Line 12: skipping unparseable row (Text '8:50:AM' could not be parsed at index 0)
-Line 13: skipping unparseable row (Text '8:50:AM' could not be parsed at index 0)
-Line 14: skipping unparseable row (Text '8:50:AM' could not be parsed at index 0)
-Line 15: skipping unparseable row (Text '8:50:AM' could not be parsed at index 0)
-Line 16: skipping unparseable row (Text '8:50:AM' could not be parsed at index 0)
-Line 17: skipping unparseable row (Text '8:50:AM' could not be parsed at index 0)
-Line 18: skipping unparseable row (Text '8:50:AM' could not be parsed at index 0)
-Line 19: skipping unparseable row (Text '8:50:AM' could not be parsed at index 0)
-Line 20: skipping unparseable row (Text '8:50:AM' could not be parsed at index 0)
-Line 21: skipping unparseable row (Text '8:50:AM' could not be parsed at index 0)
-Line 22: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 23: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 24: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 25: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 26: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 27: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 28: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 29: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 30: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 31: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 32: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 33: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 34: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 35: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 36: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 37: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 38: skipping unparseable row (Text '9:40: AM' could not be parsed at index 0)
-Line 39: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 40: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 41: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 42: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 43: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 44: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 45: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 46: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 47: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 48: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 49: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 50: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 51: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 52: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 53: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 54: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 55: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 56: skipping unparseable row (Text '10:30: AM' could not be parsed, unparsed text found at index 5)
-Line 73: skipping unparseable row (Unknown period type suffix: B)
-Line 74: skipping unparseable row (Unknown period type suffix: B)
-Line 75: skipping unparseable row (Unknown period type suffix: B)
-Line 78: skipping unparseable row (Unknown period type suffix: B)
-Line 79: skipping unparseable row (Unknown period type suffix: B)
-Line 81: skipping unparseable row (Unknown period type suffix: B)
-Line 82: skipping unparseable row (Unknown period type suffix: B)
-Line 83: skipping unparseable row (Unknown period type suffix: B)
-Line 84: skipping unparseable row (Unknown period type suffix: B)
-Line 85: skipping unparseable row (Unknown period type suffix: B)
-Line 88: skipping unparseable row (Unknown period type suffix: B)
-Line 107: skipping unparseable row (Unknown period type suffix: B)
-Line 108: skipping unparseable row (Unknown period type suffix: B)
-Line 109: skipping unparseable row (Unknown period type suffix: B)
-Line 110: skipping unparseable row (Unknown period type suffix: B)
-Line 111: skipping unparseable row (Unknown period type suffix: B)
-Line 115: skipping unparseable row (Unknown period type suffix: B)
-Line 117: skipping unparseable row (Unknown period type suffix: B)
-Line 118: skipping unparseable row (Unknown period type suffix: B)
-Line 119: skipping unparseable row (Unknown period type suffix: B)
-Line 121: skipping unparseable row (Unknown period type suffix: B)
-Line 139: skipping unparseable row (Unknown period type suffix: B)
-Line 140: skipping unparseable row (Unknown period type suffix: B)
-Line 141: skipping unparseable row (Unknown period type suffix: B)
-Line 142: skipping unparseable row (Unknown period type suffix: B)
-Line 143: skipping unparseable row (Unknown period type suffix: B)
-Line 145: skipping unparseable row (Unknown period type suffix: B)
-Line 146: skipping unparseable row (Unknown period type suffix: B)
-Line 148: skipping unparseable row (Unknown period type suffix: B)
-Line 149: skipping unparseable row (Unknown period type suffix: B)
-Line 150: skipping unparseable row (Unknown period type suffix: B)
-Line 151: skipping unparseable row (Unknown period type suffix: B)
-Line 168: skipping unparseable row (Unknown period type suffix: B)
-Line 169: skipping unparseable row (Unknown period type suffix: B)
-Line 174: skipping unparseable row (Unknown period type suffix: B)
-Line 175: skipping unparseable row (Unknown period type suffix: B)
-Line 176: skipping unparseable row (Unknown period type suffix: B)
-Line 177: skipping unparseable row (Unknown period type suffix: B)
-Line 178: skipping unparseable row (Unknown period type suffix: B)
-Line 179: skipping unparseable row (Unknown period type suffix: B)
-Line 196: skipping unparseable row (Unknown period type suffix: B)
-Line 197: skipping unparseable row (Unknown period type suffix: B)
-Line 198: skipping unparseable row (Unknown period type suffix: B)
-Line 199: skipping unparseable row (Unknown period type suffix: B)
-Line 200: skipping unparseable row (Unknown period type suffix: B)
-Line 201: skipping unparseable row (Unknown period type suffix: B)
-Line 209: skipping unparseable row (Unknown period type suffix: B)
-Line 225: skipping unparseable row (Unknown period type suffix: B)
-Line 226: skipping unparseable row (Unknown period type suffix: B)
-Line 230: skipping unparseable row (Unknown period type suffix: B)
-Line 231: skipping unparseable row (Unknown period type suffix: B)
-Line 232: skipping unparseable row (Unknown period type suffix: B)
-Line 233: skipping unparseable row (Unknown period type suffix: B)
-Line 234: skipping unparseable row (Unknown period type suffix: B)
-Line 236: skipping unparseable row (Unknown period type suffix: B)
-Line 256: skipping unparseable row (Unknown period type suffix: B)
-Line 257: skipping unparseable row (Unknown period type suffix: B)
-Line 258: skipping unparseable row (Unknown period type suffix: B)
-Line 260: skipping unparseable row (Unknown period type suffix: B)
-Line 261: skipping unparseable row (Unknown period type suffix: B)
-Line 265: skipping unparseable row (Unknown period type suffix: B)
-Line 266: skipping unparseable row (Unknown period type suffix: B)
-Line 270: skipping unparseable row (Unknown period type suffix: B)
-Line 271: skipping unparseable row (Unknown period type suffix: B)
-Line 272: skipping unparseable row (Unknown period type suffix: B)
-Line 288: skipping unparseable row (Unknown period type suffix: B)
-Line 289: skipping unparseable row (Unknown period type suffix: B)
-Line 290: skipping unparseable row (Unknown period type suffix: B)
-Line 291: skipping unparseable row (Unknown period type suffix: B)
-Line 295: skipping unparseable row (Unknown period type suffix: B)
-Line 296: skipping unparseable row (Unknown period type suffix: B)
-Line 313: skipping unparseable row (Unknown period type suffix: B)
-Line 314: skipping unparseable row (Unknown period type suffix: B)
-Line 315: skipping unparseable row (Unknown period type suffix: B)
-Line 316: skipping unparseable row (Unknown period type suffix: B)
-Line 317: skipping unparseable row (Unknown period type suffix: B)
-Line 318: skipping unparseable row (Unknown period type suffix: B)
-Line 322: skipping unparseable row (Unknown period type suffix: B)
-Line 323: skipping unparseable row (Unknown period type suffix: B)
-Line 344: skipping unparseable row (Unknown period type suffix: B)
-Line 345: skipping unparseable row (Unknown period type suffix: B)
-Line 346: skipping unparseable row (Unknown period type suffix: B)
-Line 347: skipping unparseable row (Unknown period type suffix: B)
-Line 350: skipping unparseable row (Unknown period type suffix: B)
-Line 351: skipping unparseable row (Unknown period type suffix: B)
-Line 352: skipping unparseable row (Unknown period type suffix: B)
-Line 353: skipping unparseable row (Unknown period type suffix: B)
-Line 355: skipping unparseable row (Unknown period type suffix: B)
-Line 356: skipping unparseable row (Unknown period type suffix: B)
-Line 377: skipping unparseable row (Unknown period type suffix: B)
-Line 378: skipping unparseable row (Unknown period type suffix: B)
-Line 380: skipping unparseable row (Unknown period type suffix: B)
-Line 381: skipping unparseable row (Unknown period type suffix: B)
-Line 385: skipping unparseable row (Unknown period type suffix: B)
-Line 386: skipping unparseable row (Unknown period type suffix: B)
-Line 388: skipping unparseable row (Unknown period type suffix: B)
-Line 389: skipping unparseable row (Unknown period type suffix: B)
-Line 390: skipping unparseable row (Unknown period type suffix: B)
-Line 408: skipping unparseable row (Unknown period type suffix: B)
-Line 409: skipping unparseable row (Unknown period type suffix: B)
-Line 410: skipping unparseable row (Unknown period type suffix: B)
-Line 411: skipping unparseable row (Unknown period type suffix: B)
-Line 415: skipping unparseable row (Unknown period type suffix: B)
-Line 416: skipping unparseable row (Unknown period type suffix: B)
-Line 417: skipping unparseable row (Unknown period type suffix: B)
-Line 419: skipping unparseable row (Unknown period type suffix: B)
-Line 420: skipping unparseable row (Unknown period type suffix: B)
-Line 436: skipping unparseable row (Unknown period type suffix: B)
-Line 437: skipping unparseable row (Unknown period type suffix: B)
-Line 441: skipping unparseable row (Unknown period type suffix: B)
-Line 443: skipping unparseable row (Unknown period type suffix: B)
-Line 444: skipping unparseable row (Unknown period type suffix: B)
-Line 445: skipping unparseable row (Unknown period type suffix: B)
-Line 447: skipping unparseable row (Unknown period type suffix: B)
-Line 448: skipping unparseable row (Unknown period type suffix: B)
-Line 466: skipping unparseable row (Unknown period type suffix: B)
-Line 467: skipping unparseable row (Unknown period type suffix: B)
-Line 471: skipping unparseable row (Unknown period type suffix: B)
-Line 472: skipping unparseable row (Unknown period type suffix: B)
-Line 473: skipping unparseable row (Unknown period type suffix: B)
-Line 474: skipping unparseable row (Unknown period type suffix: B)
-Line 475: skipping unparseable row (Unknown period type suffix: B)
-Line 476: skipping unparseable row (Unknown period type suffix: B)
-Line 477: skipping unparseable row (Unknown period type suffix: B)
-Line 503: skipping unparseable row (Unknown period type suffix: B)
-Line 504: skipping unparseable row (Unknown period type suffix: B)
-Line 505: skipping unparseable row (Unknown period type suffix: B)
-Line 506: skipping unparseable row (Unknown period type suffix: B)
-Line 507: skipping unparseable row (Unknown period type suffix: B)
-Line 509: skipping unparseable row (Unknown period type suffix: B)
-Line 511: skipping unparseable row (Unknown period type suffix: B)
-Line 512: skipping unparseable row (Unknown period type suffix: B)
-Line 514: skipping unparseable row (Unknown period type suffix: B)
-Line 515: skipping unparseable row (Unknown period type suffix: B)
-Line 532: skipping unparseable row (Unknown period type suffix: B)
-Line 533: skipping unparseable row (Unknown period type suffix: B)
-Line 535: skipping unparseable row (Unknown period type suffix: B)
-Line 536: skipping unparseable row (Unknown period type suffix: B)
-Line 537: skipping unparseable row (Unknown period type suffix: B)
-Line 538: skipping unparseable row (Unknown period type suffix: B)
-Line 542: skipping unparseable row (Unknown period type suffix: B)
-Line 563: skipping unparseable row (Unknown period type suffix: B)
-Line 564: skipping unparseable row (Unknown period type suffix: B)
-Line 565: skipping unparseable row (Unknown period type suffix: B)
-Line 566: skipping unparseable row (Unknown period type suffix: B)
-Line 567: skipping unparseable row (Unknown period type suffix: B)
-Line 572: skipping unparseable row (Unknown period type suffix: B)
-Line 573: skipping unparseable row (Unknown period type suffix: B)
-Line 590: skipping unparseable row (Unknown period type suffix: B)
-Line 591: skipping unparseable row (Unknown period type suffix: B)
-Line 592: skipping unparseable row (Unknown period type suffix: B)
-Line 593: skipping unparseable row (Unknown period type suffix: B)
-Line 594: skipping unparseable row (Unknown period type suffix: B)
-Line 596: skipping unparseable row (Unknown period type suffix: B)
-Line 597: skipping unparseable row (Unknown period type suffix: B)
-Line 598: skipping unparseable row (Unknown period type suffix: B)
-Line 599: skipping unparseable row (Unknown period type suffix: B)
-Line 600: skipping unparseable row (Unknown period type suffix: B)
-Line 618: skipping unparseable row (Unknown period type suffix: B)
-Line 621: skipping unparseable row (Unknown period type suffix: B)
-Line 622: skipping unparseable row (Unknown period type suffix: B)
-Line 623: skipping unparseable row (Unknown period type suffix: B)
-Line 624: skipping unparseable row (Unknown period type suffix: B)
-Line 625: skipping unparseable row (Unknown period type suffix: B)
-Line 626: skipping unparseable row (Unknown period type suffix: B)
-Line 645: skipping unparseable row (Unknown period type suffix: B)
-Line 646: skipping unparseable row (Unknown period type suffix: B)
-Line 647: skipping unparseable row (Unknown period type suffix: B)
-Line 648: skipping unparseable row (Unknown period type suffix: B)
-Line 649: skipping unparseable row (Unknown period type suffix: B)
-Line 653: skipping unparseable row (Unknown period type suffix: B)
-Line 654: skipping unparseable row (Unknown period type suffix: B)
-Line 674: skipping unparseable row (Unknown period type suffix: B)
-Line 675: skipping unparseable row (Unknown period type suffix: B)
-Line 676: skipping unparseable row (Unknown period type suffix: B)
-Line 677: skipping unparseable row (Unknown period type suffix: B)
-Line 681: skipping unparseable row (Unknown period type suffix: B)
-Line 682: skipping unparseable row (Unknown period type suffix: B)
-Line 684: skipping unparseable row (Unknown period type suffix: B)
-Line 685: skipping unparseable row (Unknown period type suffix: B)
-Line 715: skipping unparseable row (Unknown period type suffix: `)
-Line 724: skipping unparseable row (Unknown period type suffix: B)
-Line 725: skipping unparseable row (Unknown period type suffix: 3)
-Line 726: skipping unparseable row (Unknown period type suffix: B)
+    <system-err><![CDATA[Line 715: skipping unparseable row (Unknown period type suffix: `)
 Line 748: skipping unparseable row (Unknown period type suffix: 7)
 Line 749: skipping unparseable row (Unknown period type suffix: J)
-Line 750: skipping unparseable row (Unknown period type suffix: 3)
-Line 752: skipping unparseable row (Unknown period type suffix: 3)
-Line 753: skipping unparseable row (Unknown period type suffix: 1)
-Line 754: skipping unparseable row (Unknown period type suffix: 2)
-Line 755: skipping unparseable row (Unknown period type suffix: B)
-Line 756: skipping unparseable row (Unknown period type suffix: B)
-Line 757: skipping unparseable row (Unknown period type suffix: B)
-Line 759: skipping unparseable row (Unknown period type suffix: B)
-Line 761: skipping unparseable row (Unknown period type suffix: B)
-Line 762: skipping unparseable row (Unknown period type suffix: B)
 Line 766: skipping unparseable row (Unknown period type suffix: 2)
 Line 788: skipping unparseable row (Unknown period type suffix: C)
-Line 789: skipping unparseable row (Unknown period type suffix: B)
-Line 790: skipping unparseable row (Unknown period type suffix: B)
-Line 791: skipping unparseable row (Unknown period type suffix: B)
 Line 792: skipping unparseable row (Unknown period type suffix: ))
 Line 795: skipping unparseable row (Unknown period type suffix: S)
-Line 796: skipping unparseable row (Unknown period type suffix: B)
-Line 797: skipping unparseable row (Unknown period type suffix: B)
 Line 800: skipping unparseable row (Unknown period type suffix: 9)
-Line 801: skipping unparseable row (Unknown period type suffix: B)
-Line 802: skipping unparseable row (Unknown period type suffix: B)
-Line 826: skipping unparseable row (Unknown period type suffix: B)
-Line 827: skipping unparseable row (Unknown period type suffix: B)
-Line 828: skipping unparseable row (Unknown period type suffix: B)
-Line 829: skipping unparseable row (Unknown period type suffix: B)
-Line 830: skipping unparseable row (Unknown period type suffix: 1)
-Line 832: skipping unparseable row (Unknown period type suffix: B)
-Line 833: skipping unparseable row (Unknown period type suffix: B)
-Line 834: skipping unparseable row (Unknown period type suffix: B)
-Line 841: skipping unparseable row (Unknown period type suffix: B)
 Line 842: skipping unparseable row (Unknown period type suffix: 5)
-Line 843: skipping unparseable row (Unknown period type suffix: B)
-Line 866: skipping unparseable row (Unknown period type suffix: B)
-Line 867: skipping unparseable row (Unknown period type suffix: B)
 Line 868: skipping unparseable row (Unknown period type suffix: H)
-Line 872: skipping unparseable row (Unknown period type suffix: B)
-Line 873: skipping unparseable row (Unknown period type suffix: 2)
-Line 874: skipping unparseable row (Unknown period type suffix: 3)
-Line 875: skipping unparseable row (Unknown period type suffix: B)
-Line 876: skipping unparseable row (Unknown period type suffix: B)
-Line 877: skipping unparseable row (Unknown period type suffix: B)
 Line 878: skipping unparseable row (Unknown period type suffix: 4)
 Line 879: skipping unparseable row (Unknown period type suffix: 7)
-Line 880: skipping unparseable row (Unknown period type suffix: 1)
-Line 881: skipping unparseable row (Unknown period type suffix: B)
 Line 882: skipping unparseable row (Unknown period type suffix: 1)
-Line 883: skipping unparseable row (Unknown period type suffix: B)
-Line 884: skipping unparseable row (Unknown period type suffix: B)
-Line 907: skipping unparseable row (Unknown period type suffix: 1)
-Line 908: skipping unparseable row (Unknown period type suffix: 2)
 Line 909: skipping unparseable row (Unknown period type suffix: D)
-Line 914: skipping unparseable row (Unknown period type suffix: B)
 Line 916: skipping unparseable row (Unknown period type suffix: G)
-Line 917: skipping unparseable row (Unknown period type suffix: B)
-Line 918: skipping unparseable row (Unknown period type suffix: B)
-Line 919: skipping unparseable row (Unknown period type suffix: B)
-Line 920: skipping unparseable row (Unknown period type suffix: B)
 Line 921: skipping unparseable row (Unknown period type suffix: 5)
 Line 923: skipping unparseable row (Unknown period type suffix: R)
-Line 924: skipping unparseable row (Unknown period type suffix: 3)
 Line 928: skipping unparseable row (Unknown period type suffix: 2)
-Line 955: skipping unparseable row (Unknown period type suffix: B)
-Line 956: skipping unparseable row (Unknown period type suffix: B)
-Line 957: skipping unparseable row (Unknown period type suffix: B)
-Line 958: skipping unparseable row (Unknown period type suffix: B)
-Line 959: skipping unparseable row (Unknown period type suffix: 2)
 Line 960: skipping unparseable row (Unknown period type suffix: K)
-Line 961: skipping unparseable row (Unknown period type suffix: 1)
 Line 962: skipping unparseable row (Unknown period type suffix: R)
-Line 963: skipping unparseable row (Unknown period type suffix: 3)
-Line 964: skipping unparseable row (Unknown period type suffix: B)
 Line 966: skipping unparseable row (Unknown period type suffix: S)
-Line 968: skipping unparseable row (Unknown period type suffix: B)
-Line 969: skipping unparseable row (Unknown period type suffix: 2)
-Line 974: skipping unparseable row (Unknown period type suffix: B)
 Line 975: skipping unparseable row (Unknown period type suffix: R)
 Line 979: skipping unparseable row (Unknown period type suffix: 4)
 Line 1000: skipping unparseable row (Unknown period type suffix: S)
-Line 1002: skipping unparseable row (Unknown period type suffix: B)
-Line 1003: skipping unparseable row (Unknown period type suffix: B)
-Line 1004: skipping unparseable row (Unknown period type suffix: 2)
-Line 1005: skipping unparseable row (Unknown period type suffix: B)
-Line 1006: skipping unparseable row (Unknown period type suffix: B)
 Line 1008: skipping unparseable row (Unknown period type suffix: ))
-Line 1009: skipping unparseable row (Unknown period type suffix: 3)
 Line 1011: skipping unparseable row (Unknown period type suffix: G)
-Line 1015: skipping unparseable row (Unknown period type suffix: B)
 Line 1016: skipping unparseable row (Unknown period type suffix: 8)
 Line 1030: skipping unparseable row (Unknown period type suffix: ))
-Line 1034: skipping unparseable row (Unknown period type suffix: 1)
-Line 1035: skipping unparseable row (Unknown period type suffix: 2)
-Line 1037: skipping unparseable row (Unknown period type suffix: 3)
-Line 1038: skipping unparseable row (Unknown period type suffix: B)
-Line 1039: skipping unparseable row (Unknown period type suffix: B)
-Line 1040: skipping unparseable row (Unknown period type suffix: B)
 Line 1064: skipping unparseable row (Unknown period type suffix: H)
 Line 1065: skipping unparseable row (Unknown period type suffix: ))
-Line 1067: skipping unparseable row (Unknown period type suffix: B)
-Line 1068: skipping unparseable row (Unknown period type suffix: 1)
-Line 1069: skipping unparseable row (Unknown period type suffix: 2)
-Line 1070: skipping unparseable row (Unknown period type suffix: 3)
-Line 1071: skipping unparseable row (Unknown period type suffix: 3)
-Line 1072: skipping unparseable row (Unknown period type suffix: B)
-Line 1074: skipping unparseable row (Unknown period type suffix: B)
-Line 1075: skipping unparseable row (Unknown period type suffix: B)
 Line 1076: skipping unparseable row (Unknown period type suffix: 2)
-Line 1077: skipping unparseable row (Unknown period type suffix: B)
-Line 1078: skipping unparseable row (Unknown period type suffix: B)
-Line 1079: skipping unparseable row (Unknown period type suffix: B)
 Line 1092: skipping unparseable row (Unknown period type suffix: S)
-Line 1096: skipping unparseable row (Unknown period type suffix: 1)
-Line 1098: skipping unparseable row (Unknown period type suffix: B)
-Line 1099: skipping unparseable row (Unknown period type suffix: B)
 Line 1101: skipping unparseable row (Unknown period type suffix: D)
 Line 1102: skipping unparseable row (Unknown period type suffix: S)
-Line 1104: skipping unparseable row (Unknown period type suffix: B)
-Line 1106: skipping unparseable row (Unknown period type suffix: 3)
 Line 1129: skipping unparseable row (Unknown period type suffix: Y)
-Line 1131: skipping unparseable row (Unknown period type suffix: B)
 Line 1132: skipping unparseable row (Unknown period type suffix: S)
 Line 1134: skipping unparseable row (Unknown period type suffix: ))
-Line 1135: skipping unparseable row (Unknown period type suffix: B)
-Line 1136: skipping unparseable row (Unknown period type suffix: B)
-Line 1137: skipping unparseable row (Unknown period type suffix: B)
-Line 1138: skipping unparseable row (Unknown period type suffix: B)
-Line 1139: skipping unparseable row (Unknown period type suffix: 1)
 Line 1141: skipping unparseable row (Unknown period type suffix: S)
-Line 1142: skipping unparseable row (Unknown period type suffix: 3)
-Line 1143: skipping unparseable row (Unknown period type suffix: 2)
 Line 1145: skipping unparseable row (Unknown period type suffix: S)
 Line 1171: skipping unparseable row (Unknown period type suffix: .)
-Line 1173: skipping unparseable row (Unknown period type suffix: B)
-Line 1174: skipping unparseable row (Unknown period type suffix: B)
-Line 1175: skipping unparseable row (Unknown period type suffix: B)
-Line 1176: skipping unparseable row (Unknown period type suffix: B)
-Line 1177: skipping unparseable row (Unknown period type suffix: B)
-Line 1178: skipping unparseable row (Unknown period type suffix: B)
-Line 1179: skipping unparseable row (Unknown period type suffix: 1)
-Line 1180: skipping unparseable row (Unknown period type suffix: 2)
 Line 1181: skipping unparseable row (Unknown period type suffix: S)
-Line 1183: skipping unparseable row (Unknown period type suffix: B)
-Line 1187: skipping unparseable row (Unknown period type suffix: 3)
-Line 1188: skipping unparseable row (Unknown period type suffix: B)
-Line 1189: skipping unparseable row (Unknown period type suffix: B)
-Line 1206: skipping unparseable row (Unknown period type suffix: B)
 Line 1207: skipping unparseable row (Unknown period type suffix: Y)
-Line 1210: skipping unparseable row (Unknown period type suffix: 3)
-Line 1211: skipping unparseable row (Unknown period type suffix: 2)
-Line 1212: skipping unparseable row (Unknown period type suffix: B)
-Line 1214: skipping unparseable row (Unknown period type suffix: B)
 Line 1215: skipping unparseable row (Unknown period type suffix: S)
 Line 1218: skipping unparseable row (Unknown period type suffix: 2)
-Line 1219: skipping unparseable row (Unknown period type suffix: B)
-Line 1220: skipping unparseable row (Unknown period type suffix: B)
-Line 1244: skipping unparseable row (Unknown period type suffix: B)
-Line 1245: skipping unparseable row (Unknown period type suffix: B)
 Line 1246: skipping unparseable row (Unknown period type suffix: Y)
-Line 1247: skipping unparseable row (Unknown period type suffix: B)
-Line 1248: skipping unparseable row (Unknown period type suffix: B)
-Line 1249: skipping unparseable row (Unknown period type suffix: B)
-Line 1250: skipping unparseable row (Unknown period type suffix: 1)
-Line 1252: skipping unparseable row (Unknown period type suffix: B)
-Line 1253: skipping unparseable row (Unknown period type suffix: 3)
 Line 1254: skipping unparseable row (Unknown period type suffix: D)
 Line 1256: skipping unparseable row (Unknown period type suffix: 2)
 Line 1257: skipping unparseable row (Unknown period type suffix: 1)
 Line 1259: skipping unparseable row (Unknown period type suffix: 2)
-Line 1260: skipping unparseable row (Unknown period type suffix: B)
 Line 1279: skipping unparseable row (Unknown period type suffix: Y)
-Line 1281: skipping unparseable row (Unknown period type suffix: B)
-Line 1282: skipping unparseable row (Unknown period type suffix: B)
-Line 1283: skipping unparseable row (Unknown period type suffix: B)
-Line 1284: skipping unparseable row (Unknown period type suffix: B)
-Line 1285: skipping unparseable row (Unknown period type suffix: B)
-Line 1289: skipping unparseable row (Unknown period type suffix: B)
-Line 1291: skipping unparseable row (Unknown period type suffix: 1)
-Line 1292: skipping unparseable row (Unknown period type suffix: 2)
 Line 1293: skipping unparseable row (Unknown period type suffix: 0)
-Line 1294: skipping unparseable row (Unknown period type suffix: B)
-Line 1295: skipping unparseable row (Unknown period type suffix: B)
-Line 1296: skipping unparseable row (Unknown period type suffix: 3)
-Line 1317: skipping unparseable row (Unknown period type suffix: B)
 Line 1319: skipping unparseable row (Unknown period type suffix: K)
 Line 1320: skipping unparseable row (Unknown period type suffix: K)
-Line 1321: skipping unparseable row (Unknown period type suffix: 1)
 Line 1325: skipping unparseable row (Unknown period type suffix: J)
 Line 1328: skipping unparseable row (Unknown period type suffix: 2)
-Line 1329: skipping unparseable row (Unknown period type suffix: B)
-Line 1330: skipping unparseable row (Unknown period type suffix: 3)
-Line 1331: skipping unparseable row (Unknown period type suffix: B)
-Line 1332: skipping unparseable row (Unknown period type suffix: B)
-Line 1333: skipping unparseable row (Unknown period type suffix: B)
-Line 1334: skipping unparseable row (Unknown period type suffix: B)
-Line 1355: skipping unparseable row (Unknown period type suffix: 2)
 Line 1356: skipping unparseable row (Unknown period type suffix: 5)
-Line 1359: skipping unparseable row (Unknown period type suffix: B)
-Line 1360: skipping unparseable row (Unknown period type suffix: B)
-Line 1361: skipping unparseable row (Unknown period type suffix: B)
 Line 1362: skipping unparseable row (Unknown period type suffix: S)
-Line 1363: skipping unparseable row (Unknown period type suffix: 1)
-Line 1364: skipping unparseable row (Unknown period type suffix: B)
 Line 1365: skipping unparseable row (Unknown period type suffix: K)
-Line 1366: skipping unparseable row (Unknown period type suffix: B)
 Line 1368: skipping unparseable row (Unknown period type suffix: 3)
-Line 1369: skipping unparseable row (Unknown period type suffix: 3)
-Line 1370: skipping unparseable row (Unknown period type suffix: B)
-Line 1387: skipping unparseable row (Unknown period type suffix: B)
-Line 1388: skipping unparseable row (Unknown period type suffix: B)
-Line 1391: skipping unparseable row (Unknown period type suffix: 2)
-Line 1392: skipping unparseable row (Unknown period type suffix: B)
 Line 1393: skipping unparseable row (Unknown period type suffix: K)
-Line 1396: skipping unparseable row (Unknown period type suffix: 1)
-Line 1397: skipping unparseable row (Unknown period type suffix: 3)
-Line 1398: skipping unparseable row (Unknown period type suffix: B)
-Line 1411: skipping unparseable row (Unknown period type suffix: B)
-Line 1412: skipping unparseable row (Unknown period type suffix: B)
-Line 1416: skipping unparseable row (Unknown period type suffix: B)
-Line 1417: skipping unparseable row (Unknown period type suffix: B)
-Line 1418: skipping unparseable row (Unknown period type suffix: B)
 Line 1419: skipping unparseable row (Unknown period type suffix: Y)
-Line 1422: skipping unparseable row (Unknown period type suffix: B)
 Line 1423: skipping unparseable row (Unknown period type suffix: 7)
 Line 1425: skipping unparseable row (Unknown period type suffix: 1)
-Line 1427: skipping unparseable row (Unknown period type suffix: B)
-Line 1445: skipping unparseable row (Unknown period type suffix: B)
-Line 1446: skipping unparseable row (Unknown period type suffix: 1)
-Line 1447: skipping unparseable row (Unknown period type suffix: 2)
 Line 1449: skipping unparseable row (Unknown period type suffix: Y)
-Line 1450: skipping unparseable row (Unknown period type suffix: 3)
 Line 1451: skipping unparseable row (Unknown period type suffix: K)
-Line 1454: skipping unparseable row (Unknown period type suffix: B)
 Line 1455: skipping unparseable row (Unknown period type suffix: 4)
 Line 1456: skipping unparseable row (Unknown period type suffix: 1)
-Line 1460: skipping unparseable row (Unknown period type suffix: B)
-Line 1486: skipping unparseable row (Unknown period type suffix: B)
-Line 1487: skipping unparseable row (Unknown period type suffix: B)
 Line 1488: skipping unparseable row (Unknown period type suffix: J)
-Line 1489: skipping unparseable row (Unknown period type suffix: B)
-Line 1491: skipping unparseable row (Unknown period type suffix: 3)
-Line 1492: skipping unparseable row (Unknown period type suffix: 1)
 Line 1493: skipping unparseable row (Unknown period type suffix: 5)
 Line 1494: skipping unparseable row (Unknown period type suffix: 4)
-Line 1495: skipping unparseable row (Unknown period type suffix: B)
-Line 1496: skipping unparseable row (Unknown period type suffix: B)
 Line 1497: skipping unparseable row (Unknown period type suffix: S)
 Line 1498: skipping unparseable row (Unknown period type suffix: S)
-Line 1499: skipping unparseable row (Unknown period type suffix: B)
-Line 1501: skipping unparseable row (Unknown period type suffix: 2)
-Line 1503: skipping unparseable row (Unknown period type suffix: 3)
-Line 1506: skipping unparseable row (Unknown period type suffix: B)
-Line 1523: skipping unparseable row (Unknown period type suffix: B)
 Line 1525: skipping unparseable row (Unknown period type suffix: 4)
-Line 1526: skipping unparseable row (Unknown period type suffix: B)
 Line 1527: skipping unparseable row (Unknown period type suffix: D)
-Line 1528: skipping unparseable row (Unknown period type suffix: 2)
 Line 1529: skipping unparseable row (Unknown period type suffix: S)
-Line 1532: skipping unparseable row (Unknown period type suffix: B)
-Line 1533: skipping unparseable row (Unknown period type suffix: 1)
-Line 1535: skipping unparseable row (Unknown period type suffix: B)
-Line 1551: skipping unparseable row (Unknown period type suffix: B)
-Line 1555: skipping unparseable row (Unknown period type suffix: B)
-Line 1556: skipping unparseable row (Unknown period type suffix: B)
 Line 1557: skipping unparseable row (Unknown period type suffix: S)
-Line 1558: skipping unparseable row (Unknown period type suffix: 3)
-Line 1561: skipping unparseable row (Unknown period type suffix: 1)
-Line 1563: skipping unparseable row (Unknown period type suffix: B)
-Line 1570: skipping unparseable row (Unknown period type suffix: 1)
-Line 1571: skipping unparseable row (Unknown period type suffix: 1)
 ]]></system-err>
   </testcase>
 </testsuite>

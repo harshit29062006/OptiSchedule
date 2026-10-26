@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.university.scheduler.engine.CsvBookingSourceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s -- in com.university.scheduler.engine.CsvBookingSourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s -- in com.university.scheduler.engine.CsvBookingSourceTest

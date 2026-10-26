@@ -4,6 +4,9 @@
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/CsvBookingSource.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/Schedulable.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/ScheduleLoader.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/SchedulingOptimizer.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/SchedulingService.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/UtilizationReport.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/exception/FacultyOverloadException.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/exception/RoomUnavailableException.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/exception/SchedulingException.java
@@ -12,9 +15,11 @@
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/model/Course.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/model/Day.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/model/Faculty.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/model/PendingAssignment.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/model/PeriodType.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/model/Room.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/model/RoomType.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/model/Section.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/model/TimeSlot.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/util/FacultyLoadComparator.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/util/TimeSlotGenerator.java

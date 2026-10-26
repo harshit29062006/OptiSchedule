@@ -1,3 +1,9 @@
 /Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/ConflictCheckerTest.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/CsvBookingSourceTest.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/EndToEndPipelineTest.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/FacultyLoadTrackingTest.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/FindAvailableSlotTest.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/SchedulingOptimizerTest.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/SchedulingServiceTest.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/UtilizationReportTest.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/model/TimeSlotTest.java
