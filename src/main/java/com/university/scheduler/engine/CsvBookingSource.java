@@ -179,11 +179,21 @@ public class CsvBookingSource implements BookingSource {
         // Detect whether this is a room/room or faculty/faculty pair by
         // matching the first half against the room pattern.
         if (trimmed.contains("/")) {
-            String firstHalf = trimmed.split("/", 2)[0].trim();
-            if (ROOM_PATTERN.matcher(firstHalf).matches()) {
-                return new Split(firstHalf, "UNKNOWN_FACULTY_" + rowSeed);
+            String[] halves = trimmed.split("/", 2);
+            String firstHalf = halves[0].trim();
+            String secondHalf = halves.length > 1 ? halves[1].trim() : "";
+            // Edge case (confirmed in real data, e.g. "/DKJ"): the pre-mid-sem
+            // value is blank (no room/faculty assigned yet before the
+            // mid-semester change). Fall back to the second half rather than
+            // crashing on an empty identifier.
+            String chosen = !firstHalf.isEmpty() ? firstHalf : secondHalf;
+            if (chosen.isEmpty()) {
+                return new Split("UNKNOWN_ROOM_" + rowSeed, "UNKNOWN_FACULTY_" + rowSeed);
+            }
+            if (ROOM_PATTERN.matcher(chosen).matches()) {
+                return new Split(chosen, "UNKNOWN_FACULTY_" + rowSeed);
             } else {
-                return new Split("UNKNOWN_ROOM_" + rowSeed, firstHalf);
+                return new Split("UNKNOWN_ROOM_" + rowSeed, chosen);
             }
         }
 

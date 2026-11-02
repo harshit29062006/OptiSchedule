@@ -45,8 +45,11 @@ class SchedulingServiceTest {
         Booking first = new Booking(section1, course, facultyA, roomA, slot);
         service.tryAddBooking(first);
 
-        // same room, same slot, different section -> should conflict
-        Booking clashing = new Booking(new Section("S2", "CSE", 1, "A"), course, facultyA, roomA, slot);
+        // same room, same slot, DIFFERENT faculty -> genuine conflict (room double-booked).
+        // (same room + same faculty + different section is a legitimate combined class,
+        //  which merges instead of failing — see MergedSessionTest for that behavior.)
+        Faculty facultyB = new Faculty("FB", null, null, 18);
+        Booking clashing = new Booking(new Section("S2", "CSE", 1, "A"), course, facultyB, roomA, slot);
         SchedulingService.BookingResult result = service.tryAddBooking(clashing);
 
         assertFalse(result.isSuccess());

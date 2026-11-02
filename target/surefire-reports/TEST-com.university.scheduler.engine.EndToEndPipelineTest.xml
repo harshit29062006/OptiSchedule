@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.university.scheduler.engine.EndToEndPipelineTest" time="0.156" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.university.scheduler.engine.EndToEndPipelineTest" time="0.147" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/surefire/surefirebooter-20261026161843703_3.jar /Users/harshitgoyal/Desktop/OptiSchedule/target/surefire 2026-10-26T16-18-43_658-jvmRun1 surefire-20261026161843703_1tmp surefire_0-20261026161843703_2tmp"/>
+    <property name="sun.java.command" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/surefire/surefirebooter-20261102073326134_3.jar /Users/harshitgoyal/Desktop/OptiSchedule/target/surefire 2026-11-02T07-33-26_087-jvmRun1 surefire-20261102073326134_1tmp surefire_0-20261102073326134_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/test-classes:/Users/harshitgoyal/Desktop/OptiSchedule/target/classes:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2-mac-aarch64.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2-mac-aarch64.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2-mac-aarch64.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2.jar:/Users/harshitgoyal/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2-mac-aarch64.jar:/Users/harshitgoyal/.m2/repository/com/mysql/mysql-connector-j/8.4.0/mysql-connector-j-8.4.0.jar:/Users/harshitgoyal/.m2/repository/com/google/protobuf/protobuf-java/3.25.1/protobuf-java-3.25.1.jar:/Users/harshitgoyal/.m2/repository/org/apache/logging/log4j/log4j-core/2.23.1/log4j-core-2.23.1.jar:/Users/harshitgoyal/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/harshitgoyal/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/harshitgoyal/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/harshitgoyal/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/harshitgoyal/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/harshitgoyal/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/harshitgoyal/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/harshitgoyal/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/harshitgoyal/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/surefire/surefirebooter-20261026161843703_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/harshitgoyal/Desktop/OptiSchedule/target/surefire/surefirebooter-20261102073326134_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.12+7-LTS-205"/>
@@ -57,46 +57,45 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="fullPipelineFacultyLoadsAreInternallyConsistent" classname="com.university.scheduler.engine.EndToEndPipelineTest" time="0.066">
-    <system-out><![CDATA[Conflict skipped: Room L007 already booked at TUESDAY P10 @15:30 (existing: 1A1E, new: 1X2B)
-Conflict skipped: Faculty RCH-RA already teaching at TUESDAY P6 @12:10 (existing: 1A3C, new: 1A8C)
-Conflict skipped: Room LP102 already booked at TUESDAY P7 @13:00 (existing: 1A6A, new: 1A5A)
-Conflict skipped: Room H222 already booked at WEDNESDAY P8 @13:50 (existing: 1A1E, new: 1A2D)
-Conflict skipped: Room B105 already booked at WEDNESDAY P8 @13:50 (existing: 1A4C, new: 1A3E)
-Conflict skipped: Room C201 already booked at WEDNESDAY P8 @13:50 (existing: 1A4D, new: 1A3F)
-Conflict skipped: Room E311 already booked at WEDNESDAY P8 @13:50 (existing: 1A4A, new: 1A4E)
-Conflict skipped: Room LP102 already booked at WEDNESDAY P8 @13:50 (existing: 1A5A, new: 1A7A)
-Conflict skipped: Room LP103 already booked at WEDNESDAY P8 @13:50 (existing: 1C1A, new: 1A8A)
-Conflict skipped: Room L007 already booked at WEDNESDAY P8 @13:50 (existing: 1A1A, new: 1A9C)
-Conflict skipped: Room G141 already booked at WEDNESDAY P8 @13:50 (existing: 1X2B, new: 1X1C)
-Conflict skipped: Room L008 already booked at WEDNESDAY P8 @13:50 (existing: 1A1B, new: 1X1D)
-Conflict skipped: Room E311 already booked at WEDNESDAY P9 @14:40 (existing: 1A4A, new: 1A4E)
-Conflict skipped: Room LP102 already booked at WEDNESDAY P9 @14:40 (existing: 1A5A, new: 1A5A)
-Conflict skipped: Room LP103 already booked at WEDNESDAY P9 @14:40 (existing: 1C1A, new: 1A8A)
-Conflict skipped: Room T105 already booked at WEDNESDAY P9 @14:40 (existing: 1X1A, new: 1X2A)
-Conflict skipped: Room LC11 already booked at MONDAY P4 @10:30 (existing: 1B52, new: 1B91)
-Conflict skipped: Room LT102 already booked at TUESDAY P11 @16:20 (existing: 1B61, new: 1D11)
-Conflict skipped: Room LP104 already booked at TUESDAY P7 @13:00 (existing: 1B71, new: 1B41)
-Conflict skipped: Room LT101 already booked at WEDNESDAY P10 @15:30 (existing: 1B61, new: 1D11)
-Conflict skipped: Faculty RKU already teaching at WEDNESDAY P6 @12:10 (existing: 1R12, new: 1R13)
-Conflict skipped: Room G325 already booked at WEDNESDAY P8 @13:50 (existing: 1J11, new: 1B44)
-Conflict skipped: Room G310 already booked at WEDNESDAY P8 @13:50 (existing: 1B84, new: 1B45)
-Conflict skipped: Room D102 already booked at WEDNESDAY P8 @13:50 (existing: 1B23, new: 1B54)
-Conflict skipped: Room G312 already booked at WEDNESDAY P8 @13:50 (existing: 1B83, new: 1B64)
-Conflict skipped: Room LP105 already booked at WEDNESDAY P8 @13:50 (existing: 1B61, new: 1B81)
-Conflict skipped: Room E312 already booked at WEDNESDAY P8 @13:50 (existing: 1B91, new: 1B92)
-Conflict skipped: Room C309 already booked at WEDNESDAY P8 @13:50 (existing: 1R11, new: 1D13)
-Conflict skipped: Room T303 already booked at WEDNESDAY P9 @14:40 (existing: 1B28, new: 1B42)
-Conflict skipped: Room LC11 already booked at WEDNESDAY P9 @14:40 (existing: 1D12, new: 1B44)
-Conflict skipped: Room E301 already booked at WEDNESDAY P9 @14:40 (existing: 1B91, new: 1B63)
-Conflict skipped: Room LP105 already booked at WEDNESDAY P9 @14:40 (existing: 1B61, new: 1B81)
-Conflict skipped: Room E306 already booked at WEDNESDAY P9 @14:40 (existing: 1B81, new: 1B92)
-Conflict skipped: Room LC14 already booked at WEDNESDAY P9 @14:40 (existing: 1D11, new: 1D13)
-Conflict skipped: Room G325 already booked at THURSDAY P10 @15:30 (existing: 1B61, new: 1B65)
-Conflict skipped: Room LT101 already booked at THURSDAY P3 @09:40 (existing: 1B61, new: 1D11)
-Conflict skipped: Room F312 already booked at THURSDAY P5 @11:20 (existing: 1B38, new: 1B75)
-Conflict skipped: Room F310 already booked at FRIDAY P1 @08:00 (existing: 1B81, new: 1B92)
-Loaded 1428 bookings successfully, 38 rows rejected due to conflicts, out of 1466 total rows read.
+  <testcase name="fullPipelineFacultyLoadsAreInternallyConsistent" classname="com.university.scheduler.engine.EndToEndPipelineTest" time="0.07">
+    <system-out><![CDATA[Conflict skipped: Room L007 already booked at TUESDAY P10 @15:30 (existing: UNKNOWN_FACULTY_1A1E_TUESDAY_10 teaching [1A1E], new: UNKNOWN_FACULTY_1X2B_TUESDAY_10 teaching [1X2B])
+Conflict skipped: Faculty RCH-RA already teaching in room UNKNOWN_ROOM_1A3C_TUESDAY_6 at TUESDAY P6 @12:10; cannot also teach in UNKNOWN_ROOM_1A8C_TUESDAY_6 (existing: [1A3C], new: [1A8C])
+Conflict skipped: Room LP102 already booked at TUESDAY P7 @13:00 (existing: UNKNOWN_FACULTY_1A6A_TUESDAY_7 teaching [1A6A], new: UNKNOWN_FACULTY_1A5A_TUESDAY_7 teaching [1A5A])
+Conflict skipped: Room H222 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1A1E_WEDNESDAY_8 teaching [1A1E], new: UNKNOWN_FACULTY_1A2D_WEDNESDAY_8 teaching [1A2D])
+Conflict skipped: Room B105 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1A4C_WEDNESDAY_8 teaching [1A4C], new: UNKNOWN_FACULTY_1A3E_WEDNESDAY_8 teaching [1A3E])
+Conflict skipped: Room C201 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1A4D_WEDNESDAY_8 teaching [1A4D], new: UNKNOWN_FACULTY_1A3F_WEDNESDAY_8 teaching [1A3F])
+Conflict skipped: Room E311 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1A4A_WEDNESDAY_8 teaching [1A4A], new: UNKNOWN_FACULTY_1A4E_WEDNESDAY_8 teaching [1A4E])
+Conflict skipped: Room LP102 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1A5A_WEDNESDAY_8 teaching [1A5A], new: UNKNOWN_FACULTY_1A7A_WEDNESDAY_8 teaching [1A7A])
+Conflict skipped: Room LP103 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1C1A_WEDNESDAY_8 teaching [1C1A], new: UNKNOWN_FACULTY_1A8A_WEDNESDAY_8 teaching [1A8A])
+Conflict skipped: Room L007 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1A1A_WEDNESDAY_8 teaching [1A1A], new: UNKNOWN_FACULTY_1A9C_WEDNESDAY_8 teaching [1A9C])
+Conflict skipped: Room G141 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1X2B_WEDNESDAY_8 teaching [1X2B], new: UNKNOWN_FACULTY_1X1C_WEDNESDAY_8 teaching [1X1C])
+Conflict skipped: Room L008 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1A1B_WEDNESDAY_8 teaching [1A1B], new: UNKNOWN_FACULTY_1X1D_WEDNESDAY_8 teaching [1X1D])
+Conflict skipped: Room E311 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1A4A_WEDNESDAY_9 teaching [1A4A], new: UNKNOWN_FACULTY_1A4E_WEDNESDAY_9 teaching [1A4E])
+Conflict skipped: Room LP103 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1C1A_WEDNESDAY_9 teaching [1C1A], new: UNKNOWN_FACULTY_1A8A_WEDNESDAY_9 teaching [1A8A])
+Conflict skipped: Room T105 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1X1A_WEDNESDAY_9 teaching [1X1A], new: UNKNOWN_FACULTY_1X2A_WEDNESDAY_9 teaching [1X2A])
+Conflict skipped: Room LC11 already booked at MONDAY P4 @10:30 (existing: UNKNOWN_FACULTY_1B52_MONDAY_4 teaching [1B52], new: UNKNOWN_FACULTY_1B91_MONDAY_4 teaching [1B91])
+Conflict skipped: Room LT102 already booked at TUESDAY P11 @16:20 (existing: UNKNOWN_FACULTY_1B61_TUESDAY_11 teaching [1B61], new: UNKNOWN_FACULTY_1D11_TUESDAY_11 teaching [1D11])
+Conflict skipped: Room LP104 already booked at TUESDAY P7 @13:00 (existing: UNKNOWN_FACULTY_1B71_TUESDAY_7 teaching [1B71], new: UNKNOWN_FACULTY_1B41_TUESDAY_7 teaching [1B41])
+Conflict skipped: Room LT101 already booked at WEDNESDAY P10 @15:30 (existing: UNKNOWN_FACULTY_1B61_WEDNESDAY_10 teaching [1B61], new: UNKNOWN_FACULTY_1D11_WEDNESDAY_10 teaching [1D11])
+Conflict skipped: Faculty RKU already teaching in room UNKNOWN_ROOM_1R12_WEDNESDAY_6 at WEDNESDAY P6 @12:10; cannot also teach in UNKNOWN_ROOM_1R13_WEDNESDAY_6 (existing: [1R12], new: [1R13])
+Conflict skipped: Room G325 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1J11_WEDNESDAY_8 teaching [1J11], new: UNKNOWN_FACULTY_1B44_WEDNESDAY_8 teaching [1B44])
+Conflict skipped: Room G310 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1B84_WEDNESDAY_8 teaching [1B84], new: UNKNOWN_FACULTY_1B45_WEDNESDAY_8 teaching [1B45])
+Conflict skipped: Room D102 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1B23_WEDNESDAY_8 teaching [1B23], new: UNKNOWN_FACULTY_1B54_WEDNESDAY_8 teaching [1B54])
+Conflict skipped: Room G312 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1B83_WEDNESDAY_8 teaching [1B83], new: UNKNOWN_FACULTY_1B64_WEDNESDAY_8 teaching [1B64])
+Conflict skipped: Room LP105 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1B61_WEDNESDAY_8 teaching [1B61], new: UNKNOWN_FACULTY_1B81_WEDNESDAY_8 teaching [1B81])
+Conflict skipped: Room E312 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1B91_WEDNESDAY_8 teaching [1B91], new: UNKNOWN_FACULTY_1B92_WEDNESDAY_8 teaching [1B92])
+Conflict skipped: Room C309 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1R11_WEDNESDAY_8 teaching [1R11], new: UNKNOWN_FACULTY_1D13_WEDNESDAY_8 teaching [1D13])
+Conflict skipped: Room T303 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1B28_WEDNESDAY_9 teaching [1B28], new: UNKNOWN_FACULTY_1B42_WEDNESDAY_9 teaching [1B42])
+Conflict skipped: Room LC11 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1D12_WEDNESDAY_9 teaching [1D12], new: UNKNOWN_FACULTY_1B44_WEDNESDAY_9 teaching [1B44])
+Conflict skipped: Room E301 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1B91_WEDNESDAY_9 teaching [1B91], new: UNKNOWN_FACULTY_1B63_WEDNESDAY_9 teaching [1B63])
+Conflict skipped: Room LP105 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1B61_WEDNESDAY_9 teaching [1B61], new: UNKNOWN_FACULTY_1B81_WEDNESDAY_9 teaching [1B81])
+Conflict skipped: Room E306 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1B81_WEDNESDAY_9 teaching [1B81], new: UNKNOWN_FACULTY_1B92_WEDNESDAY_9 teaching [1B92])
+Conflict skipped: Room LC14 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1D11_WEDNESDAY_9 teaching [1D11], new: UNKNOWN_FACULTY_1D13_WEDNESDAY_9 teaching [1D13])
+Conflict skipped: Room G325 already booked at THURSDAY P10 @15:30 (existing: UNKNOWN_FACULTY_1B61_THURSDAY_10 teaching [1B61], new: UNKNOWN_FACULTY_1B65_THURSDAY_10 teaching [1B65])
+Conflict skipped: Room LT101 already booked at THURSDAY P3 @09:40 (existing: UNKNOWN_FACULTY_1B61_THURSDAY_3 teaching [1B61], new: UNKNOWN_FACULTY_1D11_THURSDAY_3 teaching [1D11])
+Conflict skipped: Room F312 already booked at THURSDAY P5 @11:20 (existing: UNKNOWN_FACULTY_1B38_THURSDAY_5 teaching [1B38], new: UNKNOWN_FACULTY_1B75_THURSDAY_5 teaching [1B75])
+Conflict skipped: Room F310 already booked at FRIDAY P1 @08:00 (existing: UNKNOWN_FACULTY_1B81_FRIDAY_1 teaching [1B81], new: UNKNOWN_FACULTY_1B92_FRIDAY_1 teaching [1B92])
+Loaded 1428 bookings successfully, 37 rows rejected due to conflicts, out of 1466 total rows read.
 Integration check: 1210 distinct faculty discovered, 1 at or above 90% of their weekly limit.
 ]]></system-out>
     <system-err><![CDATA[Line 715: skipping unparseable row (Unknown period type suffix: `)
@@ -177,46 +176,45 @@ Line 1529: skipping unparseable row (Unknown period type suffix: S)
 Line 1557: skipping unparseable row (Unknown period type suffix: S)
 ]]></system-err>
   </testcase>
-  <testcase name="fullPipelineLoadsRealDataAndProducesSaneUtilization" classname="com.university.scheduler.engine.EndToEndPipelineTest" time="0.087">
-    <system-out><![CDATA[Conflict skipped: Room L007 already booked at TUESDAY P10 @15:30 (existing: 1A1E, new: 1X2B)
-Conflict skipped: Faculty RCH-RA already teaching at TUESDAY P6 @12:10 (existing: 1A3C, new: 1A8C)
-Conflict skipped: Room LP102 already booked at TUESDAY P7 @13:00 (existing: 1A6A, new: 1A5A)
-Conflict skipped: Room H222 already booked at WEDNESDAY P8 @13:50 (existing: 1A1E, new: 1A2D)
-Conflict skipped: Room B105 already booked at WEDNESDAY P8 @13:50 (existing: 1A4C, new: 1A3E)
-Conflict skipped: Room C201 already booked at WEDNESDAY P8 @13:50 (existing: 1A4D, new: 1A3F)
-Conflict skipped: Room E311 already booked at WEDNESDAY P8 @13:50 (existing: 1A4A, new: 1A4E)
-Conflict skipped: Room LP102 already booked at WEDNESDAY P8 @13:50 (existing: 1A5A, new: 1A7A)
-Conflict skipped: Room LP103 already booked at WEDNESDAY P8 @13:50 (existing: 1C1A, new: 1A8A)
-Conflict skipped: Room L007 already booked at WEDNESDAY P8 @13:50 (existing: 1A1A, new: 1A9C)
-Conflict skipped: Room G141 already booked at WEDNESDAY P8 @13:50 (existing: 1X2B, new: 1X1C)
-Conflict skipped: Room L008 already booked at WEDNESDAY P8 @13:50 (existing: 1A1B, new: 1X1D)
-Conflict skipped: Room E311 already booked at WEDNESDAY P9 @14:40 (existing: 1A4A, new: 1A4E)
-Conflict skipped: Room LP102 already booked at WEDNESDAY P9 @14:40 (existing: 1A5A, new: 1A5A)
-Conflict skipped: Room LP103 already booked at WEDNESDAY P9 @14:40 (existing: 1C1A, new: 1A8A)
-Conflict skipped: Room T105 already booked at WEDNESDAY P9 @14:40 (existing: 1X1A, new: 1X2A)
-Conflict skipped: Room LC11 already booked at MONDAY P4 @10:30 (existing: 1B52, new: 1B91)
-Conflict skipped: Room LT102 already booked at TUESDAY P11 @16:20 (existing: 1B61, new: 1D11)
-Conflict skipped: Room LP104 already booked at TUESDAY P7 @13:00 (existing: 1B71, new: 1B41)
-Conflict skipped: Room LT101 already booked at WEDNESDAY P10 @15:30 (existing: 1B61, new: 1D11)
-Conflict skipped: Faculty RKU already teaching at WEDNESDAY P6 @12:10 (existing: 1R12, new: 1R13)
-Conflict skipped: Room G325 already booked at WEDNESDAY P8 @13:50 (existing: 1J11, new: 1B44)
-Conflict skipped: Room G310 already booked at WEDNESDAY P8 @13:50 (existing: 1B84, new: 1B45)
-Conflict skipped: Room D102 already booked at WEDNESDAY P8 @13:50 (existing: 1B23, new: 1B54)
-Conflict skipped: Room G312 already booked at WEDNESDAY P8 @13:50 (existing: 1B83, new: 1B64)
-Conflict skipped: Room LP105 already booked at WEDNESDAY P8 @13:50 (existing: 1B61, new: 1B81)
-Conflict skipped: Room E312 already booked at WEDNESDAY P8 @13:50 (existing: 1B91, new: 1B92)
-Conflict skipped: Room C309 already booked at WEDNESDAY P8 @13:50 (existing: 1R11, new: 1D13)
-Conflict skipped: Room T303 already booked at WEDNESDAY P9 @14:40 (existing: 1B28, new: 1B42)
-Conflict skipped: Room LC11 already booked at WEDNESDAY P9 @14:40 (existing: 1D12, new: 1B44)
-Conflict skipped: Room E301 already booked at WEDNESDAY P9 @14:40 (existing: 1B91, new: 1B63)
-Conflict skipped: Room LP105 already booked at WEDNESDAY P9 @14:40 (existing: 1B61, new: 1B81)
-Conflict skipped: Room E306 already booked at WEDNESDAY P9 @14:40 (existing: 1B81, new: 1B92)
-Conflict skipped: Room LC14 already booked at WEDNESDAY P9 @14:40 (existing: 1D11, new: 1D13)
-Conflict skipped: Room G325 already booked at THURSDAY P10 @15:30 (existing: 1B61, new: 1B65)
-Conflict skipped: Room LT101 already booked at THURSDAY P3 @09:40 (existing: 1B61, new: 1D11)
-Conflict skipped: Room F312 already booked at THURSDAY P5 @11:20 (existing: 1B38, new: 1B75)
-Conflict skipped: Room F310 already booked at FRIDAY P1 @08:00 (existing: 1B81, new: 1B92)
-Loaded 1428 bookings successfully, 38 rows rejected due to conflicts, out of 1466 total rows read.
+  <testcase name="fullPipelineLoadsRealDataAndProducesSaneUtilization" classname="com.university.scheduler.engine.EndToEndPipelineTest" time="0.074">
+    <system-out><![CDATA[Conflict skipped: Room L007 already booked at TUESDAY P10 @15:30 (existing: UNKNOWN_FACULTY_1A1E_TUESDAY_10 teaching [1A1E], new: UNKNOWN_FACULTY_1X2B_TUESDAY_10 teaching [1X2B])
+Conflict skipped: Faculty RCH-RA already teaching in room UNKNOWN_ROOM_1A3C_TUESDAY_6 at TUESDAY P6 @12:10; cannot also teach in UNKNOWN_ROOM_1A8C_TUESDAY_6 (existing: [1A3C], new: [1A8C])
+Conflict skipped: Room LP102 already booked at TUESDAY P7 @13:00 (existing: UNKNOWN_FACULTY_1A6A_TUESDAY_7 teaching [1A6A], new: UNKNOWN_FACULTY_1A5A_TUESDAY_7 teaching [1A5A])
+Conflict skipped: Room H222 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1A1E_WEDNESDAY_8 teaching [1A1E], new: UNKNOWN_FACULTY_1A2D_WEDNESDAY_8 teaching [1A2D])
+Conflict skipped: Room B105 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1A4C_WEDNESDAY_8 teaching [1A4C], new: UNKNOWN_FACULTY_1A3E_WEDNESDAY_8 teaching [1A3E])
+Conflict skipped: Room C201 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1A4D_WEDNESDAY_8 teaching [1A4D], new: UNKNOWN_FACULTY_1A3F_WEDNESDAY_8 teaching [1A3F])
+Conflict skipped: Room E311 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1A4A_WEDNESDAY_8 teaching [1A4A], new: UNKNOWN_FACULTY_1A4E_WEDNESDAY_8 teaching [1A4E])
+Conflict skipped: Room LP102 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1A5A_WEDNESDAY_8 teaching [1A5A], new: UNKNOWN_FACULTY_1A7A_WEDNESDAY_8 teaching [1A7A])
+Conflict skipped: Room LP103 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1C1A_WEDNESDAY_8 teaching [1C1A], new: UNKNOWN_FACULTY_1A8A_WEDNESDAY_8 teaching [1A8A])
+Conflict skipped: Room L007 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1A1A_WEDNESDAY_8 teaching [1A1A], new: UNKNOWN_FACULTY_1A9C_WEDNESDAY_8 teaching [1A9C])
+Conflict skipped: Room G141 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1X2B_WEDNESDAY_8 teaching [1X2B], new: UNKNOWN_FACULTY_1X1C_WEDNESDAY_8 teaching [1X1C])
+Conflict skipped: Room L008 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1A1B_WEDNESDAY_8 teaching [1A1B], new: UNKNOWN_FACULTY_1X1D_WEDNESDAY_8 teaching [1X1D])
+Conflict skipped: Room E311 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1A4A_WEDNESDAY_9 teaching [1A4A], new: UNKNOWN_FACULTY_1A4E_WEDNESDAY_9 teaching [1A4E])
+Conflict skipped: Room LP103 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1C1A_WEDNESDAY_9 teaching [1C1A], new: UNKNOWN_FACULTY_1A8A_WEDNESDAY_9 teaching [1A8A])
+Conflict skipped: Room T105 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1X1A_WEDNESDAY_9 teaching [1X1A], new: UNKNOWN_FACULTY_1X2A_WEDNESDAY_9 teaching [1X2A])
+Conflict skipped: Room LC11 already booked at MONDAY P4 @10:30 (existing: UNKNOWN_FACULTY_1B52_MONDAY_4 teaching [1B52], new: UNKNOWN_FACULTY_1B91_MONDAY_4 teaching [1B91])
+Conflict skipped: Room LT102 already booked at TUESDAY P11 @16:20 (existing: UNKNOWN_FACULTY_1B61_TUESDAY_11 teaching [1B61], new: UNKNOWN_FACULTY_1D11_TUESDAY_11 teaching [1D11])
+Conflict skipped: Room LP104 already booked at TUESDAY P7 @13:00 (existing: UNKNOWN_FACULTY_1B71_TUESDAY_7 teaching [1B71], new: UNKNOWN_FACULTY_1B41_TUESDAY_7 teaching [1B41])
+Conflict skipped: Room LT101 already booked at WEDNESDAY P10 @15:30 (existing: UNKNOWN_FACULTY_1B61_WEDNESDAY_10 teaching [1B61], new: UNKNOWN_FACULTY_1D11_WEDNESDAY_10 teaching [1D11])
+Conflict skipped: Faculty RKU already teaching in room UNKNOWN_ROOM_1R12_WEDNESDAY_6 at WEDNESDAY P6 @12:10; cannot also teach in UNKNOWN_ROOM_1R13_WEDNESDAY_6 (existing: [1R12], new: [1R13])
+Conflict skipped: Room G325 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1J11_WEDNESDAY_8 teaching [1J11], new: UNKNOWN_FACULTY_1B44_WEDNESDAY_8 teaching [1B44])
+Conflict skipped: Room G310 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1B84_WEDNESDAY_8 teaching [1B84], new: UNKNOWN_FACULTY_1B45_WEDNESDAY_8 teaching [1B45])
+Conflict skipped: Room D102 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1B23_WEDNESDAY_8 teaching [1B23], new: UNKNOWN_FACULTY_1B54_WEDNESDAY_8 teaching [1B54])
+Conflict skipped: Room G312 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1B83_WEDNESDAY_8 teaching [1B83], new: UNKNOWN_FACULTY_1B64_WEDNESDAY_8 teaching [1B64])
+Conflict skipped: Room LP105 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1B61_WEDNESDAY_8 teaching [1B61], new: UNKNOWN_FACULTY_1B81_WEDNESDAY_8 teaching [1B81])
+Conflict skipped: Room E312 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1B91_WEDNESDAY_8 teaching [1B91], new: UNKNOWN_FACULTY_1B92_WEDNESDAY_8 teaching [1B92])
+Conflict skipped: Room C309 already booked at WEDNESDAY P8 @13:50 (existing: UNKNOWN_FACULTY_1R11_WEDNESDAY_8 teaching [1R11], new: UNKNOWN_FACULTY_1D13_WEDNESDAY_8 teaching [1D13])
+Conflict skipped: Room T303 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1B28_WEDNESDAY_9 teaching [1B28], new: UNKNOWN_FACULTY_1B42_WEDNESDAY_9 teaching [1B42])
+Conflict skipped: Room LC11 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1D12_WEDNESDAY_9 teaching [1D12], new: UNKNOWN_FACULTY_1B44_WEDNESDAY_9 teaching [1B44])
+Conflict skipped: Room E301 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1B91_WEDNESDAY_9 teaching [1B91], new: UNKNOWN_FACULTY_1B63_WEDNESDAY_9 teaching [1B63])
+Conflict skipped: Room LP105 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1B61_WEDNESDAY_9 teaching [1B61], new: UNKNOWN_FACULTY_1B81_WEDNESDAY_9 teaching [1B81])
+Conflict skipped: Room E306 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1B81_WEDNESDAY_9 teaching [1B81], new: UNKNOWN_FACULTY_1B92_WEDNESDAY_9 teaching [1B92])
+Conflict skipped: Room LC14 already booked at WEDNESDAY P9 @14:40 (existing: UNKNOWN_FACULTY_1D11_WEDNESDAY_9 teaching [1D11], new: UNKNOWN_FACULTY_1D13_WEDNESDAY_9 teaching [1D13])
+Conflict skipped: Room G325 already booked at THURSDAY P10 @15:30 (existing: UNKNOWN_FACULTY_1B61_THURSDAY_10 teaching [1B61], new: UNKNOWN_FACULTY_1B65_THURSDAY_10 teaching [1B65])
+Conflict skipped: Room LT101 already booked at THURSDAY P3 @09:40 (existing: UNKNOWN_FACULTY_1B61_THURSDAY_3 teaching [1B61], new: UNKNOWN_FACULTY_1D11_THURSDAY_3 teaching [1D11])
+Conflict skipped: Room F312 already booked at THURSDAY P5 @11:20 (existing: UNKNOWN_FACULTY_1B38_THURSDAY_5 teaching [1B38], new: UNKNOWN_FACULTY_1B75_THURSDAY_5 teaching [1B75])
+Conflict skipped: Room F310 already booked at FRIDAY P1 @08:00 (existing: UNKNOWN_FACULTY_1B81_FRIDAY_1 teaching [1B81], new: UNKNOWN_FACULTY_1B92_FRIDAY_1 teaching [1B92])
+Loaded 1428 bookings successfully, 37 rows rejected due to conflicts, out of 1466 total rows read.
 Integration check: 1428 real bookings loaded, 491 distinct rooms discovered, average utilization 3.5% (see known limitation note in test javadoc).
 ]]></system-out>
     <system-err><![CDATA[Line 715: skipping unparseable row (Unknown period type suffix: `)
