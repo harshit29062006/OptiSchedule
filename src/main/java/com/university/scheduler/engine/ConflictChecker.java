@@ -12,19 +12,12 @@ import java.util.*;
  * their maxHoursPerWeek limit, and can search for a valid open slot
  * given a faculty, room, and candidate TimeSlots.
  *
- * COMBINED-CLASS HANDLING (confirmed real-world rule): if a new booking
- * has the SAME faculty AND the SAME room as an existing booking at the
- * same slot, it is not a conflict — it's one faculty teaching one
- * combined session to multiple sections at once (e.g. a shared elective).
- * In that case the new booking's section is MERGED into the existing
- * booking rather than rejected, and no additional faculty load is
- * counted (it's still one teaching period, not several).
+ * COMBINED-CLASS HANDLING: same faculty AND same room at the same slot
+ * is one combined session (merged, not a conflict, no extra load).
  *
- * TRUE conflicts remain:
+ * TRUE conflicts:
  *   - Same faculty, same slot, DIFFERENT room -> SlotConflictException
- *     (a faculty cannot teach in two rooms at once)
  *   - Same room, same slot, DIFFERENT faculty -> RoomUnavailableException
- *     (the room is genuinely double-booked by an unrelated session)
  */
 public class ConflictChecker implements Schedulable {
     private final Map<TimeSlot, List<Booking>> scheduleMap = new HashMap<>();
@@ -39,23 +32,18 @@ public class ConflictChecker implements Schedulable {
             boolean sameFaculty = b.getFaculty().equals(booking.getFaculty());
 
             if (sameRoom && sameFaculty) {
-                // Same combined session: merge the new section(s) into the
-                // existing booking. No conflict, no additional load counted
-                // — this is still one teaching period for this faculty.
                 for (Section s : booking.getSections()) {
                     b.addSection(s);
                 }
                 return;
             }
             if (sameRoom) {
-                // Different faculty, same room, same slot: genuine double-booking.
                 throw new RoomUnavailableException(
                     "Room " + booking.getRoom() + " already booked at " + slot
                     + " (existing: " + b.getFaculty() + " teaching " + b.getSections()
                     + ", new: " + booking.getFaculty() + " teaching " + booking.getSections() + ")");
             }
             if (sameFaculty) {
-                // Same faculty, different room, same slot: can't be in two places at once.
                 throw new SlotConflictException(
                     "Faculty " + booking.getFaculty() + " already teaching in room " + b.getRoom()
                     + " at " + slot + "; cannot also teach in " + booking.getRoom()
@@ -63,7 +51,6 @@ public class ConflictChecker implements Schedulable {
             }
         }
 
-        // No existing booking at this slot shares room or faculty — genuinely new booking.
         Faculty faculty = booking.getFaculty();
         int currentHours = facultyHoursThisWeek.getOrDefault(faculty, 0);
         if (currentHours + 1 > faculty.getMaxHoursPerWeek()) {
@@ -84,7 +71,7 @@ public class ConflictChecker implements Schedulable {
             boolean sameRoom = b.getRoom().equals(newBooking.getRoom());
             boolean sameFaculty = b.getFaculty().equals(newBooking.getFaculty());
             if (sameRoom && sameFaculty) {
-                continue; // would merge, not conflict
+                continue;
             }
             if (sameRoom || sameFaculty) {
                 return true;
@@ -138,12 +125,19 @@ public class ConflictChecker implements Schedulable {
         return Collections.unmodifiableList(scheduleMap.getOrDefault(slot, Collections.emptyList()));
     }
 
-    /** Total DISTINCT booking sessions (a combined class counts once, not per section). */
+    /** NEW (Day 2): snapshot of every booking currently in the schedule, for optimizer retries. */
+    public List<Booking> getAllBookings() {
+        List<Booking> all = new ArrayList<>();
+        for (List<Booking> list : scheduleMap.values()) {
+            all.addAll(list);
+        }
+        return Collections.unmodifiableList(all);
+    }
+
     public int totalBookings() {
         return scheduleMap.values().stream().mapToInt(List::size).sum();
     }
 
-    /** Total section-attendances represented (a combined class with 5 sections counts as 5). */
     public int totalSectionAttendances() {
         return scheduleMap.values().stream()
             .flatMap(List::stream)
