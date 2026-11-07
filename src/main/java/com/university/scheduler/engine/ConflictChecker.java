@@ -106,15 +106,15 @@ public class ConflictChecker implements Schedulable {
         for (TimeSlot slot : candidateSlots) {
             List<Booking> atSlot = getBookingsAt(slot);
 
-            boolean roomBusyByOther = atSlot.stream().anyMatch(b ->
-                b.getRoom().equals(room) && !b.getFaculty().equals(faculty));
-            boolean facultyBusyElsewhere = atSlot.stream().anyMatch(b ->
-                b.getFaculty().equals(faculty) && !b.getRoom().equals(room));
+            // Strict: any booking holding this room or this teacher blocks the slot.
+            // The optimizer must never create a combined session by accident.
+            boolean roomTaken = atSlot.stream().anyMatch(b -> b.getRoom().equals(room));
+            boolean facultyTaken = atSlot.stream().anyMatch(b -> b.getFaculty().equals(faculty));
 
             int currentHours = facultyHoursThisWeek.getOrDefault(faculty, 0);
             boolean wouldOverload = currentHours + 1 > faculty.getMaxHoursPerWeek();
 
-            if (!roomBusyByOther && !facultyBusyElsewhere && !wouldOverload) {
+            if (!roomTaken && !facultyTaken && !wouldOverload) {
                 return Optional.of(slot);
             }
         }

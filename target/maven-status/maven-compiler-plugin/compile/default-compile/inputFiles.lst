@@ -2,8 +2,14 @@
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/BookingSource.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/ConflictChecker.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/CsvBookingSource.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/DecisionAnalysis.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/FacultyBalance.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/OptimizationRunDriver.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/OptimizerNoSilentMergeTest.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/Schedulable.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/ScheduleCsvExporter.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/ScheduleLoader.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/ScheduleSnapshot.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/SchedulingOptimizer.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/SchedulingService.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/main/java/com/university/scheduler/engine/UtilizationReport.java

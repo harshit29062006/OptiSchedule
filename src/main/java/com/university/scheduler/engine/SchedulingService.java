@@ -5,23 +5,17 @@ import com.university.scheduler.model.*;
 import com.university.scheduler.util.TimeSlotGenerator;
 
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
- * Thin facade over the scheduling engine's internals (ConflictChecker,
- * SchedulingOptimizer, UtilizationReport). This is the intended entry
- * point for anything OUTSIDE the engine package — JavaFX screens (Member
- * C), a future DAO-backed version (Member A), or report-generation code —
- * so those callers never need to touch ConflictChecker or the optimizer
- * directly, and the internal engine design can change without breaking
- * every caller.
+ * Facade over the scheduling engine. The UI and any other layer outside the
+ * engine package should call this class, not ConflictChecker or the optimizer
+ * directly.
  *
- * Today this is backed by CsvBookingSource. When Member A's JdbcBookingSource
- * exists, only the loadFromCsv()-equivalent constructor path needs to change
- * here — everything else (getConflicts, scheduleNew, getUtilizationReport,
- * etc.) stays the same for callers.
+ * Week 3 additions:
+ *   scheduleWithRetries  multi-pass optimization with a fixed seed
+ *   getFacultyLoadSpread load balance measure over a faculty pool
+ *   getAllBookings       snapshot of the committed schedule
  */
 public class SchedulingService {
     private final ConflictChecker checker;
@@ -32,26 +26,33 @@ public class SchedulingService {
         this.standardWeekSlots = TimeSlotGenerator.generateStandardWeek();
     }
 
-    /**
-     * Creates a service instance loaded from the real timetable CSV.
-     * This is today's only loading path (no DB yet) — see class javadoc
-     * for how this will extend once Member A's DAO layer exists.
-     */
+    /** Creates a service loaded from the cleaned real timetable CSV. */
     public static SchedulingService fromCsv(Path csvPath) {
         BookingSource source = new CsvBookingSource(csvPath);
         ConflictChecker checker = new ScheduleLoader().loadFrom(source);
         return new SchedulingService(checker);
     }
 
-    /** Creates a service instance over an already-populated ConflictChecker (useful for tests). */
+    /** Creates a service over an existing checker (used by tests). */
     public static SchedulingService fromExistingChecker(ConflictChecker checker) {
         return new SchedulingService(checker);
     }
 
-    // ---- Querying the current schedule --------------------------------
+    // ---- Querying the schedule ---------------------------------------
 
+    /** Distinct booking sessions; a combined class counts once. */
     public int getTotalBookingCount() {
         return checker.totalBookings();
+    }
+
+    /** Section attendances; a combined class with five sections counts five. */
+    public int getTotalSectionAttendances() {
+        return checker.totalSectionAttendances();
+    }
+
+    /** Snapshot of every committed booking. */
+    public List<Booking> getAllBookings() {
+        return checker.getAllBookings();
     }
 
     public List<Booking> getBookingsAt(Day day, int period) {
@@ -66,13 +67,9 @@ public class SchedulingService {
         return checker.getFacultyLoad(faculty);
     }
 
-    // ---- Adding a booking manually (e.g. from a UI "add class" form) --
+    // ---- Adding a single booking ---------------------------------------
 
-    /**
-     * Attempts to add a single booking, e.g. from a JavaFX form submission.
-     * Returns a simple result object instead of making the caller catch
-     * checked exceptions directly — keeps UI code simpler.
-     */
+    /** Adds one booking and reports the outcome without throwing checked exceptions. */
     public BookingResult tryAddBooking(Booking booking) {
         try {
             checker.addBooking(booking);
@@ -82,21 +79,27 @@ public class SchedulingService {
         }
     }
 
-    // ---- Running the optimizer -----------------------------------------
+    // ---- Optimization ---------------------------------------------------
 
-    /**
-     * Runs the greedy optimizer over a set of pending assignments.
-     * Returns both what WAS scheduled and what COULDN'T be, so UI/reporting
-     * code can show both outcomes rather than just a pass/fail flag.
-     */
+    /** Single greedy pass (Weeks 2 behaviour). */
     public OptimizationResult scheduleAll(List<PendingAssignment> pending) {
         List<PendingAssignment> unscheduled = new ArrayList<>();
-        SchedulingOptimizer optimizer = new SchedulingOptimizer(checker, standardWeekSlots);
-        List<Booking> scheduled = optimizer.scheduleAll(pending, unscheduled);
+        List<Booking> scheduled = new SchedulingOptimizer(checker, standardWeekSlots)
+            .scheduleAll(pending, unscheduled);
         return new OptimizationResult(scheduled, unscheduled);
     }
 
-    // ---- Reporting -------------------------------------------------------
+    /**
+     * Multi-pass optimization (Week 3). The same seed always gives the same
+     * result, so runs can be reproduced for the report.
+     */
+    public OptimizationResult scheduleWithRetries(List<PendingAssignment> pending, int maxPasses, long seed) {
+        SchedulingOptimizer.PassResult r = new SchedulingOptimizer(
+            checker, standardWeekSlots, maxPasses, new Random(seed)).scheduleAll(pending);
+        return new OptimizationResult(r.scheduled, r.unscheduled);
+    }
+
+    // ---- Reporting ------------------------------------------------------
 
     public Map<Room, Double> getRoomUtilization(List<Room> rooms) {
         return new UtilizationReport(checker).computeRoomUtilization(rooms, standardWeekSlots);
@@ -110,9 +113,17 @@ public class SchedulingService {
         return new UtilizationReport(checker).findFacultyNearLoadLimit(thresholdRatio);
     }
 
-    // ---- Nested result types ---------------------------------------------
+    /**
+     * Population standard deviation of weekly load across a faculty pool.
+     * Lower means more evenly distributed. Idle faculty count as zero.
+     */
+    public double getFacultyLoadSpread(Collection<Faculty> pool) {
+        return FacultyBalance.loadStdDev(checker, pool);
+    }
 
-    /** Outcome of a single tryAddBooking() call — avoids forcing callers to catch checked exceptions. */
+    // ---- Result types ----------------------------------------------------
+
+    /** Outcome of a single tryAddBooking call. */
     public static final class BookingResult {
         private final boolean success;
         private final String errorMessage;
@@ -129,7 +140,7 @@ public class SchedulingService {
         public String getErrorMessage() { return errorMessage; }
     }
 
-    /** Outcome of a scheduleAll() run — both the successes and the failures, never silently dropped. */
+    /** Outcome of an optimization run: both successes and failures, never silently dropped. */
     public static final class OptimizationResult {
         private final List<Booking> scheduled;
         private final List<PendingAssignment> unscheduled;

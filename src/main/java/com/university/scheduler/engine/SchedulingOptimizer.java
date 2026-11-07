@@ -3,26 +3,24 @@ package com.university.scheduler.engine;
 import com.university.scheduler.exception.SchedulingException;
 import com.university.scheduler.model.*;
 import com.university.scheduler.util.FacultyLoadComparator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 
 /**
  * Greedy scheduling optimizer with multi-pass retry, capacity-aware room
- * selection, load-balanced faculty selection, and boundary validation.
+ * selection, load-balanced faculty selection, boundary validation, and logging.
  *
- * Input rules (Day 6), checked before any placement:
- *   - pending, its elements, and the checker/slots/random must not be null
- *   - the same section+course may not appear twice in one run (IllegalArgumentException)
- *
- * Faculty (Day 5): eligible teachers are tried least-loaded first.
- * Rooms (Day 3): rooms too small for the expected strength are removed,
- *   and the rest are tried tightest fit first.
- * Slots (Day 2): pass 1 uses the given order; later passes shuffle it, and
- *   the pass placing the most assignments is kept and committed.
- *
- * This is a heuristic with no backtracking.
+ * Logging (Week 4 Day 2): only the committed (winning) pass is logged, so the
+ * log describes the final schedule rather than every trial. Each placed class
+ * is logged at INFO, each unplaced class at WARN, and a summary of the winning
+ * pass at INFO. Trial passes are silent.
  */
 public class SchedulingOptimizer {
+
+    private static final Logger LOG = LogManager.getLogger(SchedulingOptimizer.class);
+
     private final ConflictChecker baseChecker;
     private final List<TimeSlot> allSlots;
     private final int maxPasses;
@@ -56,8 +54,8 @@ public class SchedulingOptimizer {
     }
 
     /**
-     * Runs up to maxPasses passes, keeps the best one, and commits its
-     * bookings to the base checker. Returns the details of the winning pass.
+     * Runs up to maxPasses passes, keeps the best one, and commits its bookings
+     * to the base checker. Returns the details of the winning pass.
      *
      * @throws NullPointerException     if pending or any element is null
      * @throws IllegalArgumentException if the same section+course appears twice
@@ -82,6 +80,8 @@ public class SchedulingOptimizer {
         }
 
         commit(best);
+        LOG.info("optimizer: winning pass {} of {}, placed {}, unplaced {}",
+            best.passNumber, maxPasses, best.scheduled.size(), best.unscheduled.size());
         return best;
     }
 
@@ -96,7 +96,7 @@ public class SchedulingOptimizer {
         return result.scheduled;
     }
 
-    /** Rejects bad input before anything is placed, so a failure never leaves a half-committed schedule. */
+    /** Rejects bad input before anything is placed. */
     static void validate(List<PendingAssignment> pending) {
         Objects.requireNonNull(pending, "pending cannot be null");
         Set<String> seen = new HashSet<>();
@@ -132,21 +132,28 @@ public class SchedulingOptimizer {
         return new PassResult(passNumber, scheduled, unscheduled);
     }
 
+    /** Commits the winning pass and logs each outcome. */
     private void commit(PassResult best) {
         for (Booking b : best.scheduled) {
             try {
                 baseChecker.addBooking(b);
+                LOG.info("placed section {} course {} faculty {} room {} slot {}",
+                    b.getSection().getSectionCode(),
+                    b.getCourse().getCourseCode(),
+                    b.getFaculty().getFacultyId(),
+                    b.getRoom().getRoomId(),
+                    b.getTimeSlot());
             } catch (SchedulingException e) {
                 throw new IllegalStateException("Committing winning pass failed unexpectedly", e);
             }
         }
+        for (PendingAssignment pa : best.unscheduled) {
+            LOG.warn("unplaced section {} course {}: no room, teacher and slot combination was free",
+                pa.getSection().getSectionCode(), pa.getCourse().getCourseCode());
+        }
     }
 
-    /**
-     * Candidate rooms for one assignment, in the order they should be tried.
-     * Rooms too small for the expected strength are removed. If strength is
-     * known, the rest are sorted by wasted seats, tightest fit first.
-     */
+    /** Candidate rooms, in the order to try them: large enough, tightest fit first. */
     static List<Room> orderedRooms(PendingAssignment pa) {
         List<Room> rooms = new ArrayList<>(pa.getCandidateRooms());
         int strength = pa.getExpectedStrength();
@@ -196,11 +203,9 @@ public class SchedulingOptimizer {
             for (Room room : orderedRooms(pa)) {
                 for (TimeSlot slot : slotOrder) {
                     List<Booking> atSlot = checker.getBookingsAt(slot);
-                    boolean roomBusyByOther = atSlot.stream().anyMatch(b ->
-                        b.getRoom().equals(room) && !b.getFaculty().equals(f));
-                    boolean facultyBusyElsewhere = atSlot.stream().anyMatch(b ->
-                        b.getFaculty().equals(f) && !b.getRoom().equals(room));
-                    if (!roomBusyByOther && !facultyBusyElsewhere) {
+                    boolean roomTaken = atSlot.stream().anyMatch(b -> b.getRoom().equals(room));
+                    boolean facultyTaken = atSlot.stream().anyMatch(b -> b.getFaculty().equals(f));
+                    if (!roomTaken && !facultyTaken) {
                         count++;
                     }
                 }
