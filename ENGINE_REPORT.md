@@ -64,6 +64,8 @@ Seeded runs of 20 new classes:
 
 Failures are explained by reason in each run's summary. The most common reason was {{TOP_REASON}}.
 
+Test run with every room set to 150 seats: 20 of 20 test classes placed (seed 42). This is an upper bound, since the real building has rooms of varying size. With the 60-seat placeholder, 10 of 20 placed, and all failures were caused by capacity.
+
 ## 8. Verification
 
 - **Unit and integration tests:** {{TEST_COUNT}} tests, {{TEST_FAILURES}} failures.

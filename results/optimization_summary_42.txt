@@ -1,0 +1,19 @@
+==================== OPTIMIZATION RUN SUMMARY ====================
+Seed:                          42
+Existing real bookings:        5665 (loaded in 501 ms)
+New assignments requested:     20
+Scheduled:                     10 (50.0%)
+Unscheduled:                   10 (50.0%)
+Winning pass:                  1 of 10 (optimization 329 ms)
+Average room utilization:      3.48% -> 3.48%
+Faculty at weekly limit:       0 -> 0
+Why assignments failed:
+     3 x no candidate room large enough for strength 91
+     1 x no candidate room large enough for strength 111
+     1 x no candidate room large enough for strength 92
+     1 x no candidate room large enough for strength 87
+     1 x no candidate room large enough for strength 73
+     1 x no candidate room large enough for strength 105
+     1 x no candidate room large enough for strength 67
+     1 x no candidate room large enough for strength 100
+==================================================================

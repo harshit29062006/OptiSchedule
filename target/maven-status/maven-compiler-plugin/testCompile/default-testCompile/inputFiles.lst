@@ -10,6 +10,7 @@
 /Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/FindAvailableSlotTest.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/MergedSessionTest.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/OptimizationRunDriverTest.java
+/Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/OptimizerNoSilentMergeTest.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/PropertyInvariantTest.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/ScheduleCsvExporterTest.java
 /Users/harshitgoyal/Desktop/OptiSchedule/src/test/java/com/university/scheduler/engine/ScheduleSnapshotTest.java

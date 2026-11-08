@@ -68,6 +68,8 @@ import java.util.regex.*;
  */
 public class CsvBookingSource implements BookingSource {
     private final Path csvPath;
+    static final int PLACEHOLDER_ROOM_CAPACITY = 150;
+
 
     // Matches common room-code patterns seen in the real data: an optional
     // short letter prefix (building/block code, e.g. LP, LT, PL, E, C, G, T,
@@ -136,9 +138,11 @@ public class CsvBookingSource implements BookingSource {
 
                     Faculty faculty = facultyCache.computeIfAbsent(split.facultyId,
                         f -> new Faculty(f, null, null, 18));
-                    Room room = roomCache.computeIfAbsent(split.roomId,
-                        r -> new Room(r, r, RoomType.CLASSROOM, 60));
+                    /** PLACEHOLDER: real room capacities are not in the source data. Replace when available. */
 
+                    // ...inside loadAll(), in place of the old line:
+                    Room room = roomCache.computeIfAbsent(split.roomId,
+                        r -> new Room(r, r, RoomType.CLASSROOM, PLACEHOLDER_ROOM_CAPACITY));
                     bookings.add(new Booking(section, course, faculty, room, slot));
                 } catch (Exception rowEx) {
                     System.err.println("Line " + lineNum + ": skipping unparseable row (" + rowEx.getMessage() + ")");

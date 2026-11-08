@@ -1,0 +1,8 @@
+============ FACULTY LOAD BALANCE COMPARISON ============
+Batch: 40 new classes, seed 42
+                                  NAIVE     BALANCED
+Scheduled                            14           14
+Unscheduled                          26           26
+Load std dev (before)             0.868        0.868
+Load std dev (after)              0.869        0.869
+=========================================================
