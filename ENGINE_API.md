@@ -36,7 +36,10 @@ Call this class from the interface. Do not call `ConflictChecker` or `Scheduling
 |---|---|
 | `interface BookingSource` | `List<Booking> loadAll()`. Every source implements this. |
 | `CsvBookingSource` | Reference implementation, reads the cleaned CSV |
+| `JdbcBookingSource` | Loads persisted sessions and linked sections through the DAO layer |
 | `ScheduleLoader.loadFrom(BookingSource)` | Builds a `ConflictChecker`, logs rejections at WARN |
+
+`SchedulingService.fromJdbc()` is the database-backed facade entry point. `Course` variants with the same base code are distinguished by `PeriodType`, matching the relational composite key.
 
 A new source, including the JDBC one, must pass `BookingSourceContractTest`. Four rules apply: `loadAll` never returns null, repeat calls return the same count, every booking is complete, and the loader never accepts more than the source offered.
 
@@ -85,5 +88,5 @@ Not enforced: one section in two rooms at once. See `WEEK4_DECISIONS.md` (D1).
 
 | Member | Area | Confirmed / requested changes | Date |
 |---|---|---|---|
-| A | Database and `BookingSource` | [PENDING] | [PENDING] |
+| A | Database and `BookingSource` | Confirmed; JDBC source implements the documented contract | 2026-11-17 |
 | C | Interface and `SchedulingService` | [PENDING] | [PENDING] |

@@ -1,6 +1,8 @@
 package com.university.scheduler.engine;
 
 import com.university.scheduler.exception.SchedulingException;
+import com.university.scheduler.dao.ConnectionProvider;
+import com.university.scheduler.dao.JdbcConnectionFactory;
 import com.university.scheduler.model.*;
 import com.university.scheduler.util.TimeSlotGenerator;
 
@@ -30,6 +32,17 @@ public class SchedulingService {
     public static SchedulingService fromCsv(Path csvPath) {
         BookingSource source = new CsvBookingSource(csvPath);
         ConflictChecker checker = new ScheduleLoader().loadFrom(source);
+        return new SchedulingService(checker);
+    }
+
+    /** Creates a service from the configured MySQL database. */
+    public static SchedulingService fromJdbc() {
+        return fromJdbc(new JdbcConnectionFactory());
+    }
+
+    /** Creates a service from a supplied JDBC connection provider (also useful for tests). */
+    public static SchedulingService fromJdbc(ConnectionProvider connections) {
+        ConflictChecker checker = new ScheduleLoader().loadFrom(new JdbcBookingSource(connections));
         return new SchedulingService(checker);
     }
 

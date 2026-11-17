@@ -22,10 +22,10 @@ Run these in order, and record each result below.
 
 | Check | Result |
 |---|---|
-| Test count | [FILL] |
-| Test failures | [FILL] |
-| Clean clone passes | [FILL: yes / no] |
-| Property sweep regression seeds recorded | [FILL: none / list] |
+| Test count | 114 (JUnit Platform run) |
+| Test failures | 0 |
+| Clean clone passes | Not run; run after commit/merge |
+| Property sweep regression seeds recorded | None |
 
 ## Release
 
@@ -43,7 +43,7 @@ git push origin <branch> --follow-tags
 | Item | Owner | Status |
 |---|---|---|
 | Confirm `ENGINE_API.md` | A and C | [PENDING] |
-| Implement `JdbcBookingSource` and extend the contract test | A | [PENDING, if A has a database layer] |
+| Implement `JdbcBookingSource` and extend the contract test | A | Implemented; H2-backed test passed in the full JUnit run |
 | Decide D1 (section clash) and D2 (session index) | B with the timetable owner | [PENDING] |
 | Replace placeholder faculty limit and room capacity with real values | Timetable owner | [PENDING] |
 | Check the PG sheet against the Excel and decide D3 | B | [PENDING] |

@@ -20,6 +20,7 @@ com.university.scheduler
  ├── model/       → Member B: Faculty, Room, Course, Section, TimeSlot, Booking, enums
  ├── exception/   → Member B: SchedulingException hierarchy
  ├── engine/      → Member B: ConflictChecker, scheduling/optimization logic
+ ├── dao/         → Member A: JDBC DAOs, connection and import utilities
  ├── dao/         → Member A: RoomDAO, FacultyDAO, CourseDAO, BookingDAO, DB connection
  ├── ui/          → Member C: JavaFX screens, controllers
  └── util/        → shared: Comparators, logging helpers, file I/O (Member B/D)
@@ -27,10 +28,11 @@ com.university.scheduler
 
 ## Config
 
-`src/main/resources/config.properties` holds DB connection settings.
-Member A: replace placeholder values with real local DB credentials.
-**Never commit real passwords** — for this college project a placeholder is fine, but keep
-the habit for your resume story ("externalized config, did not hardcode credentials").
+`src/main/resources/config.properties` holds default DB connection settings. Set
+`DB_URL`, `DB_USERNAME`, and `DB_PASSWORD` locally to override them.
+**Never commit real passwords** — keep credentials outside Git.
+
+Member A's JDBC setup, schema, and import commands are documented in [DATA_IMPORT.md](DATA_IMPORT.md).
 
 ## Branching convention
 

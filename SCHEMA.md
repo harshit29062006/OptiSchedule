@@ -20,13 +20,10 @@ Mapping rules:
 - `section` (e.g. `1A2A`) → `sections.section_code`
 - `course_code` (e.g. `UCB009P`) → split into:
   - base code `UCB009` → `courses.course_code`
-  - suffix letter `P` → `courses.period_type` (`L`=Lecture, `T`=Tutorial, `P`=Practical) — **confirm with Member A whether `L` means Lecture or Lab in this institution's convention before finalizing**
-- `room_faculty_raw` (e.g. `CBCL(G114)`) → split into:
-  - faculty initials → `faculty.faculty_id` (e.g. `CBCL`)
-  - room code → `rooms.room_id` (e.g. `G114`)
-  - (exact split regex to be finalized by Member A once more raw examples are reviewed — format isn't 100% consistent across lecture/lab/tutorial rows)
+  - suffix letter → `courses.period_type` (`L`=Lecture, `T`=Tutorial, `P`=Practical), as confirmed by Member A
+- `room_faculty_raw` is parsed by the existing `CsvBookingSource` heuristic. Confirmed room-like codes and parenthesized forms resolve to rooms; unclassified counterparts get a unique `UNKNOWN_FACULTY_...` identifier. Unresolved rooms use `UNKNOWN_ROOM_...`. The importer stores these in the lookup tables with `is_synthetic=TRUE` instead of guessing or leaving broken foreign keys.
 - `day` + `period` + `start_time` → `timeslots` row
-- `sheet` name (e.g. `FIRST YEAR A`) → gives `branch`/`year`/`division` for `sections`
+- `sheet` name gives the year and division when recognizable; branch remains null because the source naming convention does not establish a branch code.
 
 ---
 
@@ -35,64 +32,65 @@ Mapping rules:
 ### `branches`
 | Column | Type | Notes |
 |---|---|---|
-| branch_id | VARCHAR(10) PK | e.g. "CSE", "ECE" — confirm actual branch codes used across all 9 sheets |
+| branch_id | VARCHAR(20) PK | e.g. "CSE", "ECE" — confirm actual branch codes used across all 9 sheets |
 | branch_name | VARCHAR(100) | full name |
 
 ### `faculty`
 | Column | Type | Notes |
 |---|---|---|
-| faculty_id | VARCHAR(20) PK | institutional short-code, e.g. "TA8", "CBCL" (no full-name legend available) |
+| faculty_id | VARCHAR(100) PK | institutional short-code or flagged synthetic identifier |
 | faculty_name | VARCHAR(100) NULL | leave null unless/until a legend is found |
 | department | VARCHAR(50) NULL | optional, fill if derivable from branch |
-| max_hours_per_week | INT | default placeholder (e.g. 18) until real policy confirmed |
+| max_hours_per_week | INT | default placeholder (18) until real policy confirmed |
+| is_synthetic | BOOLEAN | true for unresolved identifiers created by the CSV loader |
 
 ### `rooms`
 | Column | Type | Notes |
 |---|---|---|
-| room_id | VARCHAR(20) PK | e.g. "G114", "LP101", "E304" |
-| room_name | VARCHAR(50) | can default to room_id if no separate display name |
-| room_type | ENUM('CLASSROOM','LAB','TUTORIAL_ROOM') | infer from code prefix (LP = lab, E/G = classroom — confirm convention) |
-| capacity | INT | default placeholder until real capacity data available |
+| room_id | VARCHAR(100) PK | e.g. "G114", "LP101", "E304", or synthetic identifier |
+| room_name | VARCHAR(100) | can default to room_id if no separate display name |
+| room_type | VARCHAR(30) | current loader default is CLASSROOM; real room type convention still needs confirmation |
+| capacity | INT | default placeholder (150) until real capacity data available |
+| is_synthetic | BOOLEAN | true for unresolved identifiers created by the CSV loader |
 
 ### `courses`
 | Column | Type | Notes |
 |---|---|---|
-| course_code | VARCHAR(10) PK | base code, e.g. "UCB009" |
+| course_code | VARCHAR(20) PK (composite with `period_type`) | base code, e.g. "UCB009" |
 | course_name | VARCHAR(150) | joined from the separate course list (Member D) |
 | credits | INT NULL | from course list if available |
-| period_type | ENUM('LECTURE','TUTORIAL','PRACTICAL') | from code suffix L/T/P |
+| period_type | VARCHAR(20) PK (composite with `course_code`) | from suffix L/T/P; `L` is confirmed Lecture |
 
 ### `sections`
 | Column | Type | Notes |
 |---|---|---|
-| section_id | INT PK AUTO_INCREMENT | surrogate key |
-| section_code | VARCHAR(10) UNIQUE | e.g. "1A2A" — matches real batch code directly |
-| branch_id | VARCHAR(10) FK → branches | |
-| year | TINYINT | 1–4, or 0 for PG |
-| division | VARCHAR(5) NULL | e.g. "A", "B" if separable from section_code |
+| section_id | BIGINT PK AUTO_INCREMENT | surrogate key |
+| section_code | VARCHAR(30) UNIQUE | e.g. "1A2A" — matches real batch code directly |
+| branch_id | VARCHAR(20) FK → branches NULL | null until conventions are confirmed |
+| academic_year | SMALLINT | maps to Java `Section.year`; 1–4, or 0 for PG |
+| division | VARCHAR(10) NULL | e.g. "A", "B" if separable from sheet name |
 
 ### `timeslots`
 | Column | Type | Notes |
 |---|---|---|
-| timeslot_id | INT PK AUTO_INCREMENT | surrogate key |
-| day | ENUM('MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY','SUNDAY') | |
-| period_number | TINYINT | 1–14 range seen in real data (double-shift school day) |
+| timeslot_id | BIGINT PK AUTO_INCREMENT | surrogate key |
+| weekday | VARCHAR(12) | maps to Java `TimeSlot.day`; MONDAY through SUNDAY |
+| period_number | SMALLINT | positive period number; keyed with day |
 | start_time | TIME | |
-| end_time | TIME NULL | compute from next period's start_time if not directly given |
+| end_time | TIME NULL | currently null because the input CSV only gives start time |
 
 ### `bookings`
 | Column | Type | Notes |
 |---|---|---|
-| booking_id | INT PK AUTO_INCREMENT | surrogate key |
-| section_id | INT FK → sections | |
-| course_code | VARCHAR(10) FK → courses | |
-| faculty_id | VARCHAR(20) FK → faculty | |
-| room_id | VARCHAR(20) FK → rooms | |
-| timeslot_id | INT FK → timeslots | |
+| booking_id | BIGINT PK AUTO_INCREMENT | one session, not one section attendance |
+| course_code, period_type | composite FK → courses | |
+| faculty_id | VARCHAR(100) FK → faculty | synthetic identifiers can be longer |
+| room_id | VARCHAR(100) FK → rooms | synthetic identifiers can be longer |
+| timeslot_id | BIGINT FK → timeslots | |
 
-Uniqueness constraint candidates (to be enforced at DB + app level):
-- `(room_id, timeslot_id)` should be unique → room double-booking check
-- `(faculty_id, timeslot_id)` should be unique → faculty double-booking check
+Combined sessions are related to sections through `booking_sections(booking_id, section_id)`, not a single `bookings.section_id` column.
+
+Database uniqueness constraints enforce `(room_id, timeslot_id)` and `(faculty_id, timeslot_id)`. One booking row may link to many sections through `booking_sections`.
 
 ---
 
@@ -106,10 +104,8 @@ DB `snake_case` columns map to Java `camelCase` fields directly, e.g.:
 
 ---
 
-## 4. Open questions to resolve with Member A before Day 2
+## 4. Remaining data questions
 
-1. Does `L` suffix in course codes mean **Lecture** or **Lab**? (affects `PeriodType` enum semantics)
-2. What's the actual branch-code convention across all 9 sheets (not just FIRST YEAR A/B)?
-3. Room prefix convention — is `LP` always Lab, `E`/`G` always classroom? Any exceptions?
-4. Should `end_time` be stored explicitly per slot, or computed as "next period's start_time"?
-5. Confirm whether `period_number` resets per day (1–14) or is continuous — parser currently assumes it resets.
+1. Branch mapping and room-type classification are intentionally deferred per the timetable owner's recommendation because room labels vary and the additional source files are outside the current scope.
+2. Should `end_time` be stored explicitly per slot, or computed as "next period's start_time"?
+3. Confirm period numbering with the timetable owner; the current model treats each `(day, period_number)` as one slot.

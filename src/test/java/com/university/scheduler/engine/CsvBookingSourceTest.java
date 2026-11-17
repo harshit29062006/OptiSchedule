@@ -1,6 +1,8 @@
 package com.university.scheduler.engine;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -20,6 +22,8 @@ import static org.junit.jupiter.api.Assertions.*;
  * total row count — that gap is expected, not a bug.
  */
 class CsvBookingSourceTest {
+
+    @TempDir Path tempDir;
 
     private static final Path FULL_DATASET_PATH =
         Path.of("src/main/resources/data/all_sheets_cleaned.csv");
@@ -49,5 +53,19 @@ class CsvBookingSourceTest {
         assertTrue(loaded > 3500,
             "Expected a substantial majority of the ~7,093 raw rows to load successfully; got " + loaded
             + ". If this is lower than expected, check for a new parsing regression rather than assuming it's the known data-quality gap.");
+    }
+
+    @Test
+    void skipsSlashSeparatedCourseListsInsteadOfTreatingThemAsOneCourse() throws Exception {
+        Path csv = tempDir.resolve("ambiguous-courses.csv");
+        Files.writeString(csv,
+            "sheet,day,period,start_time,section,course_code,room_faculty_raw\n"
+                + "FIRST YEAR A,MONDAY,1,08:00:00,1A1A,CS101L,G114\n"
+                + "FIRST YEAR A,MONDAY,2,09:00:00,1A1A,CS101L/CS102L,G114\n");
+
+        var loaded = new CsvBookingSource(csv).loadAll();
+
+        assertEquals(1, loaded.size());
+        assertEquals("CS101", loaded.get(0).getCourse().getCourseCode());
     }
 }

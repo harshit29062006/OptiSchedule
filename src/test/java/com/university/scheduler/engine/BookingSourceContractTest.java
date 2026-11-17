@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Contract every BookingSource must satisfy (Week 4 Day 5).
  *
  * To test a new source, extend this class and return the source from
- * createSource(). The JDBC implementation (Member A) should do exactly this,
+ * createSource(). The JDBC implementation (Member A) extends this contract,
  * so the database version is held to the same rules as the CSV version.
  *
  * Rules:

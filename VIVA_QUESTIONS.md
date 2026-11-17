@@ -2,8 +2,8 @@
 
 ## Design
 
-**1. Why are faculty, room and course immutable value objects?**
-Their identity is their code. Mutable keys in a `HashMap` break lookups, and the engine uses them as keys in its schedule map.
+**1. Why are faculty, room and course identified by stable keys?**
+Faculty and room identity is their code. A course is identified by its base code and period type because the source uses multiple suffixes for some base codes. Stable identity fields keep equality and lookups predictable.
 
 **2. Why is `TimeSlot` equal by day and period, not by start time?**
 The source timetable has inconsistent times for the same period. Two entries for period 3 on Monday are the same slot even when one says 09:40 and the other 09:41.
@@ -86,3 +86,23 @@ Unit tests check specific cases. Property tests check invariants across 200 rand
 
 **25. How do you know results are reproducible?**
 `reproduce.sh` regenerates every number from fixed seeds. The clean-clone script then confirms the build passes on a fresh copy of the repository.
+
+## Database and JDBC
+
+**26. Why does a booking need a `booking_sections` link table?**
+One teacher-room-time combination can be a combined session attended by multiple sections. A single `section_id` column would lose those additional attendances. The link table stores one booking session and one row per attending section.
+
+**27. How does the schema prevent room and teacher clashes without rejecting combined classes?**
+It enforces unique room/time and faculty/time on session rows. A combined class is represented by one session row with multiple section links, so it satisfies both constraints.
+
+**28. How do DAOs prevent SQL injection and connection leaks?**
+All values are bound through `PreparedStatement`; each connection, statement and result set is opened with try-with-resources. JDBC failures become `DatabaseException` and are logged.
+
+**29. Why mark synthetic faculty and room rows?**
+The existing parser cannot confidently identify every raw value. Synthetic rows keep foreign keys valid and preserve complete booking objects while making inferred identifiers visible for later cleanup.
+
+**30. How are database credentials managed?**
+The connection factory reads the project properties and allows `DB_URL`, `DB_USERNAME`, and `DB_PASSWORD` environment overrides. Real credentials stay out of Git.
+
+**31. Why is there no unique constraint on section and time?**
+The source contains section clashes that need checking against the original timetable. Enforcing the constraint before that review could reject source data the project is expected to retain.

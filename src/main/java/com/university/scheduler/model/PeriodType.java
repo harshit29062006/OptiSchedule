@@ -4,18 +4,7 @@ package com.university.scheduler.model;
  * Represents the type of a scheduled period, derived from the suffix
  * letter on course codes in the real dataset (e.g. UCB009P, UCB009T, UCB009L).
  *
- * OPEN QUESTION (flagged in SCHEMA.md, confirm with Member A):
- * In the sample data, "L"-suffixed codes (e.g. UCB009L) appeared paired
- * with lab rooms (e.g. LP101), suggesting L = Lab/Practical-style session,
- * NOT "Lecture" as the letter might first suggest. Until confirmed, this
- * enum treats:
- *   T -> TUTORIAL
- *   P -> PRACTICAL
- *   L -> PRACTICAL  (tentative — re-map to LECTURE if Member A confirms
- *                     the institution's convention differs)
- *
- * Update CourseCodeParser (Member A's loader) and this enum together if
- * the convention is confirmed to be different.
+ * The institution's convention was confirmed by Member A: L means Lecture.
  */
 public enum PeriodType {
     LECTURE,
@@ -35,8 +24,7 @@ public enum PeriodType {
             case 'P':
                 return PRACTICAL;
             case 'L':
-                // TENTATIVE — see class-level note above.
-                return PRACTICAL;
+                return LECTURE;
             default:
                 throw new IllegalArgumentException("Unknown period type suffix: " + suffix);
         }

@@ -115,6 +115,15 @@ public class CsvBookingSource implements BookingSource {
                     continue;
                 }
 
+                // Some source cells list several alternative courses separated
+                // by '/'. They are not one course code and cannot be represented
+                // faithfully by the current Course model, so do not persist the
+                // whole list as a fabricated course identifier.
+                if (courseCodeRaw.contains("/")) {
+                    System.err.println("Line " + lineNum + ": skipping ambiguous course-code list (" + courseCodeRaw + ")");
+                    continue;
+                }
+
                 try {
                     Day dayEnum = Day.valueOf(day.toUpperCase());
                     int period = Integer.parseInt(periodStr);
@@ -124,8 +133,8 @@ public class CsvBookingSource implements BookingSource {
                     String baseCode = courseCodeRaw.replaceAll("[A-Z]$", "");
                     char suffix = courseCodeRaw.charAt(courseCodeRaw.length() - 1);
                     PeriodType type = PeriodType.fromSuffix(suffix);
-                    Course course = courseCache.computeIfAbsent(baseCode,
-                        c -> new Course(c, null, null, type));
+                    Course course = courseCache.computeIfAbsent(baseCode + ":" + type,
+                        ignored -> new Course(baseCode, null, null, type));
 
                     Section section = sectionCache.computeIfAbsent(sectionCode,
                         s -> new Section(s, null, 0, null));
