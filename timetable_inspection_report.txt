@@ -1,0 +1,60 @@
+OPTISCHEDULE TIMETABLE INSPECTION REPORT
+=======================================================
+
+Total sheets: 9
+Total non-empty cells: 22236
+
+Sheet: FIRST YEAR A 
+Rows: 378
+Columns: 141
+Merged ranges: 3970
+Non-empty cells: 2312
+----------------------------------------
+Sheet: FIRST YEAR B
+Rows: 379
+Columns: 143
+Merged ranges: 4501
+Non-empty cells: 2542
+----------------------------------------
+Sheet: 2ND YEAR A 
+Rows: 378
+Columns: 138
+Merged ranges: 4197
+Non-empty cells: 3136
+----------------------------------------
+Sheet: 2ND YEARB B
+Rows: 378
+Columns: 152
+Merged ranges: 5607
+Non-empty cells: 3249
+----------------------------------------
+Sheet: 3RD YEAR A
+Rows: 378
+Columns: 133
+Merged ranges: 3617
+Non-empty cells: 3430
+----------------------------------------
+Sheet: 3RD YEAR B
+Rows: 377
+Columns: 137
+Merged ranges: 2597
+Non-empty cells: 2674
+----------------------------------------
+Sheet: 4TH YEAR A
+Rows: 378
+Columns: 132
+Merged ranges: 3249
+Non-empty cells: 1711
+----------------------------------------
+Sheet: PG TIME TABLE
+Rows: 375
+Columns: 93
+Merged ranges: 3398
+Non-empty cells: 1984
+----------------------------------------
+Sheet: 4TH YEAR B
+Rows: 378
+Columns: 115
+Merged ranges: 2497
+Non-empty cells: 1198
+----------------------------------------
