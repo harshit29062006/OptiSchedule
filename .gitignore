@@ -1,0 +1,6 @@
+target/
+logs/
+results/
+/config.properties
+.DS_Store
+*.class
