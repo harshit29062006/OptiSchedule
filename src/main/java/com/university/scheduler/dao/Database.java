@@ -1,6 +1,8 @@
 package com.university.scheduler.dao;
 
 import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -15,8 +17,12 @@ public final class Database {
         Properties p = new Properties();
         try (InputStream in = Database.class.getResourceAsStream("/config.properties")) {
             if (in != null) p.load(in);
+            Path local = Path.of("config.properties");
+            if (Files.isRegularFile(local)) {
+                try (InputStream localIn = Files.newInputStream(local)) { p.load(localIn); }
+            }
         } catch (Exception e) {
-            throw new IllegalStateException("Cannot read /config.properties", e);
+            throw new IllegalStateException("Cannot read database configuration", e);
         }
         return p;
     }

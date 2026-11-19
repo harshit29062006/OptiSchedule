@@ -67,6 +67,7 @@ import java.util.regex.*;
  * as a best-effort improvement, not a final, confirmed clean dataset.
  */
 public class CsvBookingSource implements BookingSource {
+    public static final int PLACEHOLDER_ROOM_CAPACITY = 60;
     private final Path csvPath;
 
     // Matches common room-code patterns seen in the real data: an optional
@@ -137,7 +138,7 @@ public class CsvBookingSource implements BookingSource {
                     Faculty faculty = facultyCache.computeIfAbsent(split.facultyId,
                         f -> new Faculty(f, null, null, 18));
                     Room room = roomCache.computeIfAbsent(split.roomId,
-                        r -> new Room(r, r, RoomType.CLASSROOM, 60));
+                        r -> new Room(r, r, RoomType.CLASSROOM, PLACEHOLDER_ROOM_CAPACITY));
 
                     bookings.add(new Booking(section, course, faculty, room, slot));
                 } catch (Exception rowEx) {
