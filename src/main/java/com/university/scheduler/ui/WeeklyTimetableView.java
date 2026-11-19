@@ -88,86 +88,299 @@ public final class WeeklyTimetableView {
     private final ObservableList<String[]> visible = FXCollections.observableArrayList();
     private final Label status = new Label();
 
-    public Parent getView() {
-        VBox root = new VBox(10);
-        root.setPadding(new Insets(14));
+    
+public Parent getView() {
 
-        Label intro = new Label(
-                "Official July–December 2026 timetable. Choose All programmes to view every programme, " +
-                "or select one programme for a clearer individual timetable. The grid includes lectures, " +
-                "tutorials and practicals; multi-period labs are shown at their correct start time and duration.");
-        intro.setWrapText(true);
+    VBox root = new VBox(18);
+    root.setPadding(new Insets(22));
+    root.setStyle("-fx-background-color: #F0DAAE;");
 
-        sheet.setPromptText("Programme");
-        sheet.setPrefWidth(205);
+    // Page heading
+    Label heading = new Label("Weekly Timetable");
+    heading.setStyle(
+        "-fx-font-family: 'Georgia';" +
+        "-fx-font-size: 28px;" +
+        "-fx-font-weight: bold;" +
+        "-fx-text-fill: #482E1D;"
+    );
 
-        group.setPromptText("Section / subgroup");
-        group.setPrefWidth(175);
+    Label subtitle = new Label(
+        "Official university schedule · July–December 2026"
+    );
+    subtitle.setStyle(
+        "-fx-font-size: 13px;" +
+        "-fx-text-fill: #895D2B;"
+    );
 
-        search.setPromptText("Search course or group");
-        HBox.setHgrow(search, Priority.ALWAYS);
+    VBox titleBox = new VBox(5, heading, subtitle);
 
-        HBox filters = new HBox(9,
-                new Label("Programme:"), sheet,
-                new Label("Section:"), group,
-                search);
-        filters.setAlignment(Pos.CENTER_LEFT);
+    // Statistics and class type legend
+    Label lectureLegend = createLegend("Lecture", "#895D2B");
+    Label tutorialLegend = createLegend("Tutorial", "#A3966A");
+    Label practicalLegend = createLegend("Practical", "#90553C");
 
-        table.getColumns().add(column("Period / Time", 0, 125));
-        for (int i = 0; i < DAYS.size(); i++) {
-            table.getColumns().add(column(DAYS.get(i), i + 1, 165));
+    HBox legend = new HBox(
+        18,
+        lectureLegend,
+        tutorialLegend,
+        practicalLegend
+    );
+    Button compactBtn = new Button("Compact");
+Button comfortableBtn = new Button("Comfortable");
+
+compactBtn.getStyleClass().add("primary-button");
+comfortableBtn.getStyleClass().add("primary-button");
+
+compactBtn.setOnAction(e -> {
+    table.setFixedCellSize(55);
+});
+
+comfortableBtn.setOnAction(e -> {
+    table.setFixedCellSize(85);
+});
+
+HBox viewControls = new HBox(
+    10,
+    new Label("VIEW DENSITY:"),
+    compactBtn,
+    comfortableBtn
+);
+
+viewControls.setAlignment(Pos.CENTER_RIGHT);
+    legend.setAlignment(Pos.CENTER_LEFT);
+
+    // Filters
+    sheet.setPromptText("Select programme");
+    sheet.setPrefWidth(210);
+
+    group.setPromptText("Select section");
+    group.setPrefWidth(180);
+
+    search.setPromptText("Search course, room, group or faculty");
+    search.setPrefHeight(40);
+    HBox.setHgrow(search, Priority.ALWAYS);
+
+    Button apply = new Button("Apply Filters");
+    apply.getStyleClass().add("primary-button");
+    apply.setPrefHeight(40);
+    apply.setOnAction(e -> refresh());
+
+    HBox filters = new HBox(
+        12,
+        sheet,
+        group,
+        search,
+        apply
+    );
+    filters.setAlignment(Pos.CENTER_LEFT);
+
+    // Timetable table
+    table.getColumns().clear();
+
+    table.getColumns().add(
+        column("PERIOD / TIME", 0, 125)
+    );
+
+    for (int i = 0; i < DAYS.size(); i++) {
+        table.getColumns().add(
+            column(DAYS.get(i).toUpperCase(), i + 1, 145)
+        );
+    }
+
+    table.setColumnResizePolicy(
+        TableView.CONSTRAINED_RESIZE_POLICY
+    );
+
+    table.setFixedCellSize(76);
+    table.setMinHeight(480);
+    table.setPrefHeight(650);
+    table.setMaxHeight(Double.MAX_VALUE);
+
+    VBox.setVgrow(table, Priority.ALWAYS);
+    table.setItems(visible);
+    table.setPlaceholder(
+        new Label("No classes match your selected filters.")
+    );
+
+    table.getStyleClass().add("modern-timetable");
+
+    VBox.setVgrow(table, Priority.ALWAYS);
+
+    // Status
+    status.setWrapText(true);
+    status.setStyle(
+        "-fx-text-fill: #895D2B;" +
+        "-fx-font-size: 12px;"
+    );
+
+    // Filter actions
+    sheet.setOnAction(e -> loadGroups());
+    group.setOnAction(e -> refresh());
+    search.setOnAction(e -> refresh());
+
+    // Main content card
+    VBox timetableCard = new VBox(
+    12,
+    filters,
+    legend,
+    viewControls,
+    table,
+    status
+);
+
+    timetableCard.setPadding(new Insets(18));
+    timetableCard.setStyle(
+        "-fx-background-color: #FFF8EA;" +
+        "-fx-background-radius: 16;" +
+        "-fx-border-color: #E0CBA7;" +
+        "-fx-border-radius: 16;"
+    );
+
+    root.getChildren().add(timetableCard);
+
+    loadData();
+
+    return root;
+}
+
+private Label createLegend(String name, String color) {
+
+    Label label = new Label("●  " + name);
+
+    label.setStyle(
+        "-fx-text-fill: " + color + ";" +
+        "-fx-font-size: 12px;" +
+        "-fx-font-weight: bold;"
+    );
+
+    return label;
+}
+
+
+    
+private TableColumn<String[], String> column(
+        String title,
+        int index,
+        double width
+) {
+
+    TableColumn<String[], String> c =
+            new TableColumn<>(title);
+
+    c.setCellValueFactory(
+        v -> new SimpleStringProperty(v.getValue()[index])
+    );
+
+    c.setPrefWidth(width);
+
+    c.setCellFactory(col -> new TableCell<>() {
+
+        private final VBox card = new VBox(5);
+        private final Label heading = new Label();
+        private final Label details = new Label();
+
+        {
+            card.setPadding(new Insets(8));
+            card.setMinHeight(90);
+            card.setMaxWidth(Double.MAX_VALUE);
+            card.setAlignment(Pos.CENTER_LEFT);
+
+            heading.setWrapText(true);
+            heading.setStyle(
+                "-fx-font-size: 11px;" +
+                "-fx-font-weight: bold;" +
+                "-fx-text-fill: #482E1D;"
+            );
+
+            details.setWrapText(true);
+            details.setStyle(
+                "-fx-font-size: 10px;" +
+                "-fx-text-fill: #482E1D;"
+            );
+
+            card.getChildren().addAll(heading, details);
         }
-        table.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
-        table.setFixedCellSize(-1);
-        table.setItems(visible);
-        table.setPlaceholder(new Label("No classes match these filters."));
-        VBox.setVgrow(table, Priority.ALWAYS);
 
-        Label legend = new Label(
-                "L = Lecture   ·   T = Tutorial   ·   P = Practical / Lab   ·   Combined cells retain every class type shown in Excel");
-        legend.setWrapText(true);
-        legend.getStyleClass().add("muted-label");
+        @Override
+        protected void updateItem(String value, boolean empty) {
 
-        Button apply = new Button("Apply filters");
-        apply.getStyleClass().add("primary-button");
-        apply.setOnAction(e -> refresh());
+            super.updateItem(value, empty);
 
-        sheet.setOnAction(e -> loadGroups());
-        group.setOnAction(e -> refresh());
-        search.setOnAction(e -> refresh());
-
-        root.getChildren().addAll(intro, filters, apply, legend, table, status);
-        loadData();
-        return root;
-    }
-
-    private TableColumn<String[], String> column(String title, int index, double width) {
-        TableColumn<String[], String> c = new TableColumn<>(title);
-        c.setCellValueFactory(v -> new SimpleStringProperty(v.getValue()[index]));
-        c.setPrefWidth(width);
-        c.setCellFactory(col -> new TableCell<>() {
-            private final Label label = new Label();
-
-            {
-                label.setWrapText(true);
-                label.setMaxWidth(Double.MAX_VALUE);
-                label.setMinHeight(Region.USE_PREF_SIZE);
-                label.setPadding(new Insets(6));
+            if (empty || value == null || value.isBlank()) {
+                setGraphic(null);
+                setStyle("-fx-background-color: #FFF8EA;");
+                return;
             }
 
-            @Override
-            protected void updateItem(String value, boolean empty) {
-                super.updateItem(value, empty);
-                if (empty || value == null || value.isBlank()) {
-                    setGraphic(null);
-                } else {
-                    label.setText(value);
-                    setGraphic(label);
+            if (index == 0) {
+
+                heading.setText(value);
+                details.setText("");
+
+                card.setStyle(
+                    "-fx-background-color: #F0DAAE;" +
+                    "-fx-background-radius: 8;"
+                );
+
+            } else {
+
+                String[] lines = value.split("\\n");
+
+                String firstLine = lines.length > 0
+                        ? lines[0] : "Class";
+
+                heading.setText(firstLine);
+
+                StringBuilder remaining = new StringBuilder();
+
+                for (int i = 1; i < lines.length; i++) {
+                    if (remaining.length() > 0) {
+                        remaining.append("\n");
+                    }
+                    remaining.append(lines[i]);
                 }
+
+                details.setText(remaining.toString());
+
+                String background = "#F8E5C5";
+
+                if (value.contains("Tutorial")) {
+                    background = "#E8E6CC";
+                }
+
+                if (value.contains("Practical")
+                        || value.contains("Lab")) {
+                    background = "#EBD0C5";
+                }
+
+                if (value.contains("CONTINUES")) {
+                    background = "#E7D8B8";
+                }
+
+                if (value.contains("Combined:")) {
+                    background = "#E6D8B9";
+                }
+
+                card.setStyle(
+                    "-fx-background-color: " + background + ";" +
+                    "-fx-background-radius: 8;" +
+                    "-fx-border-color: #E0CBA7;" +
+                    "-fx-border-radius: 8;" +
+                    "-fx-border-width: 0.5;"
+                );
             }
-        });
-        return c;
-    }
+
+            setGraphic(card);
+            setStyle(
+                "-fx-background-color: #FFF8EA;" +
+                "-fx-padding: 3;"
+            );
+        }
+    });
+
+    return c;
+}
+
 
     // CSV parser supporting commas, escaped quotes, and quoted fields.
     // The generator flattens embedded Excel line breaks so each record stays on one CSV line.

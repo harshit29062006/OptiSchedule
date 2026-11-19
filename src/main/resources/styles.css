@@ -1,48 +1,54 @@
 
-/* ================================
-   OPTISCHEDULE - DARK DESIGN SYSTEM
-================================ */
+/* =====================================================
+   OPTISCHEDULE 2.0
+   ESPRESSO x SAND STORM DESIGN SYSTEM
+   ===================================================== */
 
 .root {
     -fx-font-family: "Segoe UI";
-    -fx-background-color: #0B1020;
+    -fx-background-color: #F0DAAE;
+    -fx-text-fill: #482E1D;
 }
 
 /* Main application */
 
+.main-layout,
 .app-root {
-    -fx-background-color: #0B1020;
+    -fx-background-color: #F0DAAE;
 }
 
 /* Sidebar */
 
 .sidebar {
-    -fx-background-color: #10182B;
+    -fx-background-color: #482E1D;
     -fx-padding: 28 18 24 18;
-    -fx-border-color: #202B45;
+    -fx-border-color: #895D2B;
     -fx-border-width: 0 1 0 0;
 }
 
 .logo {
-    -fx-font-size: 23px;
+    -fx-font-family: "Georgia";
+    -fx-font-size: 25px;
     -fx-font-weight: bold;
-    -fx-text-fill: #FFFFFF;
+    -fx-text-fill: #F0DAAE;
 }
 
 .logo-accent {
-    -fx-text-fill: #A78BFA;
+    -fx-text-fill: #A3966A;
 }
 
 .sidebar-section {
-    -fx-text-fill: #64748B;
+    -fx-text-fill: #C8AD83;
     -fx-font-size: 10px;
     -fx-font-weight: bold;
     -fx-letter-spacing: 2px;
 }
 
+/* Navigation buttons */
+
 .nav-button {
     -fx-background-color: transparent;
-    -fx-text-fill: #94A3B8;
+    -fx-text-fill: #F0DAAE;
     -fx-font-size: 14px;
     -fx-font-weight: 500;
     -fx-background-radius: 10;
@@ -52,98 +58,95 @@
 }
 
 .nav-button:hover {
-    -fx-background-color: #202D49;
+    -fx-background-color: #895D2B;
     -fx-text-fill: white;
 }
 
 .nav-button.active {
-    -fx-background-color: linear-gradient(
-        to right, #6D45D8, #4935A5
-    );
-    -fx-text-fill: white;
-    -fx-effect: dropshadow(
-        gaussian, #5938B855, 15, 0.2, 0, 3
-    );
+    -fx-background-color: #F0DAAE;
+    -fx-text-fill: #482E1D;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, #24160D44, 9, 0.15, 0, 3);
 }
 
-/* Top header */
+/* Header */
 
+.header,
 .top-header {
-    -fx-background-color: #10182B;
+    -fx-background-color: #F8EBD1;
     -fx-padding: 17 28;
-    -fx-border-color: #202B45;
+    -fx-border-color: #DCC69E;
     -fx-border-width: 0 0 1 0;
 }
 
+.page-title,
 .header-title {
-    -fx-text-fill: #F1F5F9;
-    -fx-font-size: 17px;
+    -fx-text-fill: #482E1D;
+    -fx-font-family: "Georgia";
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.user-label {
+    -fx-text-fill: #895D2B;
+    -fx-font-size: 13px;
     -fx-font-weight: bold;
 }
 
 .search-field {
-    -fx-background-color: #1A2540;
-    -fx-text-fill: white;
-    -fx-prompt-text-fill: #71809B;
+    -fx-background-color: #FFF8EA;
+    -fx-text-fill: #482E1D;
+    -fx-prompt-text-fill: #A3966A;
     -fx-background-radius: 10;
-    -fx-border-color: #293653;
+    -fx-border-color: #DCC69E;
     -fx-border-radius: 10;
     -fx-padding: 11 15;
 }
 
-.profile-circle {
-    -fx-background-color: linear-gradient(
-        to bottom right, #8B5CF6, #4F46E5
-    );
-    -fx-text-fill: white;
-    -fx-font-weight: bold;
-    -fx-background-radius: 50;
-}
-
-/* Dashboard background */
+/* Dashboard */
 
 .dashboard {
-    -fx-background-color: #0B1020;
-    -fx-padding: 30;
+    -fx-background-color: #F0DAAE;
+    -fx-padding: 28;
 }
 
 .page-heading {
-    -fx-text-fill: #F8FAFC;
-    -fx-font-size: 29px;
+    -fx-text-fill: #482E1D;
+    -fx-font-family: "Georgia";
+    -fx-font-size: 28px;
     -fx-font-weight: bold;
 }
 
 .page-subtitle {
-    -fx-text-fill: #8492AA;
+    -fx-text-fill: #895D2B;
     -fx-font-size: 13px;
 }
 
-/* Welcome banner */
-
 .welcome-banner {
-    -fx-background-color: linear-gradient(
-        to right, #422B82, #3446A5, #245B91
-    );
+    -fx-background-color: linear-gradient(to right, #482E1D, #895D2B);
     -fx-background-radius: 17;
     -fx-padding: 28;
-    -fx-border-color: #7762D655;
+    -fx-border-color: #A3966A;
     -fx-border-radius: 17;
 }
 
 .welcome-title {
-    -fx-text-fill: white;
-    -fx-font-size: 25px;
+    -fx-text-fill: #F0DAAE;
+    -fx-font-family: "Georgia";
+    -fx-font-size: 27px;
     -fx-font-weight: bold;
 }
 
 .welcome-description {
-    -fx-text-fill: #D4DDF9;
+    -fx-text-fill: #F8EBD1;
     -fx-font-size: 13px;
 }
 
+/* Buttons */
+
 .primary-button {
-    -fx-background-color: #FFFFFF;
-    -fx-text-fill: #4935A5;
+    -fx-background-color: #482E1D;
+    -fx-text-fill: #F0DAAE;
     -fx-font-weight: bold;
     -fx-padding: 12 19;
     -fx-background-radius: 9;
@@ -151,307 +154,553 @@
 }
 
 .primary-button:hover {
-    -fx-background-color: #E9E4FF;
+    -fx-background-color: #895D2B;
+}
+
+.button {
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.button:focused,
+.text-field:focused,
+.combo-box:focused {
+    -fx-border-color: #A3966A;
+    -fx-border-radius: 8;
 }
 
 /* Statistic cards */
 
 .stat-card {
-    -fx-background-color: #171F35;
+    -fx-background-color: #FFF8EA;
     -fx-background-radius: 14;
     -fx-border-radius: 14;
+    -fx-border-color: #E0CBA7;
     -fx-border-width: 1;
     -fx-padding: 19;
+    -fx-effect: dropshadow(gaussian, #482E1D18, 10, 0.12, 0, 3);
 }
 
-.stat-purple {
-    -fx-border-color: #8B5CF655;
-}
-
-.stat-cyan {
-    -fx-border-color: #22D3EE55;
-}
-
-.stat-green {
-    -fx-border-color: #34D39955;
-}
-
+.stat-purple,
+.stat-cyan,
+.stat-green,
 .stat-orange {
-    -fx-border-color: #FBBF2455;
+    -fx-border-color: #D7BD91;
 }
 
 .stat-title {
-    -fx-text-fill: #94A3B8;
+    -fx-text-fill: #895D2B;
     -fx-font-size: 12px;
+    -fx-font-weight: bold;
 }
 
 .stat-number {
-    -fx-text-fill: #F8FAFC;
+    -fx-text-fill: #482E1D;
+    -fx-font-family: "Georgia";
     -fx-font-size: 30px;
     -fx-font-weight: bold;
 }
 
 .stat-description {
-    -fx-text-fill: #71809B;
+    -fx-text-fill: #A3966A;
     -fx-font-size: 11px;
 }
 
 .stat-icon {
-    -fx-font-size: 19px;
+    -fx-font-size: 20px;
     -fx-font-weight: bold;
 }
 
-.purple-text {
-    -fx-text-fill: #A78BFA;
-}
-
-.cyan-text {
-    -fx-text-fill: #22D3EE;
-}
-
-.green-text {
-    -fx-text-fill: #34D399;
-}
-
+.purple-text,
+.cyan-text,
+.green-text,
 .orange-text {
-    -fx-text-fill: #FBBF24;
+    -fx-text-fill: #895D2B;
 }
 
 /* Content cards */
 
 .content-card {
-    -fx-background-color: #171F35;
+    -fx-background-color: #FFF8EA;
     -fx-background-radius: 15;
-    -fx-border-color: #283550;
+    -fx-border-color: #E0CBA7;
     -fx-border-radius: 15;
     -fx-padding: 21;
+    -fx-effect: dropshadow(gaussian, #482E1D18, 10, 0.12, 0, 3);
 }
 
 .section-heading {
-    -fx-text-fill: #F1F5F9;
-    -fx-font-size: 18px;
+    -fx-text-fill: #482E1D;
+    -fx-font-family: "Georgia";
+    -fx-font-size: 19px;
     -fx-font-weight: bold;
 }
 
-.muted-text {
-    -fx-text-fill: #8190AA;
+.muted-text,
+.muted-label {
+    -fx-text-fill: #A3966A;
     -fx-font-size: 12px;
 }
 
 /* Timetable */
 
 .schedule-row {
-    -fx-background-color: #1C2942;
+    -fx-background-color: #F8EBD1;
     -fx-background-radius: 10;
     -fx-padding: 12;
 }
 
 .schedule-time {
-    -fx-text-fill: #A78BFA;
+    -fx-text-fill: #895D2B;
     -fx-font-size: 11px;
     -fx-font-weight: bold;
 }
 
 .schedule-subject {
-    -fx-text-fill: #F1F5F9;
+    -fx-text-fill: #482E1D;
     -fx-font-size: 13px;
     -fx-font-weight: bold;
 }
 
 .schedule-room {
-    -fx-text-fill: #8190AA;
+    -fx-text-fill: #A3966A;
     -fx-font-size: 11px;
+}
+
+/* Table styling */
+
+.table-view {
+    -fx-background-color: #FFF8EA;
+    -fx-background-radius: 12;
+    -fx-border-color: #DCC69E;
+    -fx-border-radius: 12;
+    -fx-table-cell-border-color: #E8D8BB;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #482E1D;
+    -fx-background-radius: 10 10 0 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-size: 45px;
+    -fx-border-color: transparent transparent #895D2B transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #F0DAAE;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.table-row-cell {
+    -fx-background-color: #FFF8EA;
+    -fx-cell-size: 48px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #F8EBD1;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #E8D1A7;
+}
+
+.table-row-cell .text {
+    -fx-fill: #482E1D;
+}
+
+.table-cell {
+    -fx-text-fill: #482E1D;
+    -fx-padding: 8;
+    -fx-border-color: #E8D8BB;
+}
+
+.table-view .placeholder .label {
+    -fx-text-fill: #A3966A;
+}
+
+/* Input fields */
+
+.text-field,
+.text-area {
+    -fx-background-color: #FFF8EA;
+    -fx-text-fill: #482E1D;
+    -fx-prompt-text-fill: #A3966A;
+    -fx-background-radius: 8;
+    -fx-border-color: #DCC69E;
+    -fx-border-radius: 8;
+    -fx-padding: 10;
+}
+
+.combo-box {
+    -fx-background-color: #FFF8EA;
+    -fx-border-color: #DCC69E;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #482E1D;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #895D2B;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #FFF8EA;
+}
+
+.combo-box-popup .list-cell {
+    -fx-text-fill: #482E1D;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #F0DAAE;
 }
 
 /* Progress bars */
 
 .progress-bar {
     -fx-pref-height: 9;
-    -fx-background-color: #293650;
+    -fx-background-color: #E8D8BB;
     -fx-background-radius: 10;
 }
 
 .progress-bar > .track {
-    -fx-background-color: #293650;
+    -fx-background-color: #E8D8BB;
     -fx-background-radius: 10;
 }
 
 .progress-bar > .bar {
-    -fx-background-color: #8B5CF6;
+    -fx-background-color: #895D2B;
     -fx-background-radius: 10;
     -fx-background-insets: 0;
 }
 
-.progress-green > .bar {
-    -fx-background-color: #34D399;
-}
-
-.progress-cyan > .bar {
-    -fx-background-color: #22D3EE;
-}
-
+.progress-green > .bar,
+.progress-cyan > .bar,
 .progress-orange > .bar {
-    -fx-background-color: #FBBF24;
+    -fx-background-color: #A3966A;
 }
 
-/* Placeholder screens */
+/* Tabs */
 
-.placeholder-screen {
-    -fx-background-color: #0B1020;
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #F0DAAE;
 }
 
-.placeholder-title {
-    -fx-text-fill: #F1F5F9;
-    -fx-font-size: 27px;
+.tab-pane .tab {
+    -fx-background-color: #E5D0A8;
+    -fx-background-radius: 8 8 0 0;
+    -fx-padding: 9 18;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #895D2B;
     -fx-font-weight: bold;
 }
 
-/* ROOMS MANAGEMENT */
-
-.table-view {
-    -fx-background-color: #171F35;
-    -fx-background-radius: 10;
-    -fx-border-color: #283550;
-    -fx-border-radius: 10;
-    -fx-table-cell-border-color: #283550;
+.tab-pane .tab:selected {
+    -fx-background-color: #482E1D;
 }
 
-.table-view .column-header-background {
-    -fx-background-color: #202B45;
-    -fx-background-radius: 10 10 0 0;
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #F0DAAE;
 }
 
-.table-view .column-header {
-    -fx-background-color: transparent;
-    -fx-size: 44px;
-    -fx-border-color: transparent transparent #35415D transparent;
+.tab-pane > .tab-content-area {
+    -fx-background-color: #F0DAAE;
 }
 
-.table-view .column-header .label {
-    -fx-text-fill: #A78BFA;
-    -fx-font-weight: bold;
-    -fx-font-size: 11px;
-}
-
-.table-row-cell {
-    -fx-background-color: #171F35;
-    -fx-cell-size: 49px;
-}
-
-.table-row-cell:odd {
-    -fx-background-color: #1A243B;
-}
-
-.table-row-cell:selected {
-    -fx-background-color: #373064;
-}
-
-.table-row-cell .text {
-    -fx-fill: #E2E8F0;
-}
-
-.table-view .placeholder .label {
-    -fx-text-fill: #94A3B8;
-}
-
-.combo-box {
-    -fx-background-color: #1A2540;
-    -fx-border-color: #293653;
-    -fx-border-radius: 8;
-    -fx-background-radius: 8;
-}
-
-.combo-box .list-cell {
-    -fx-text-fill: #E2E8F0;
-}
-
-.combo-box .arrow {
-    -fx-background-color: #A78BFA;
-}
+/* Dialogs */
 
 .dialog-pane {
-    -fx-background-color: #171F35;
+    -fx-background-color: #FFF8EA;
 }
 
 .dialog-pane .header-panel {
-    -fx-background-color: #202B45;
+    -fx-background-color: #482E1D;
 }
 
 .dialog-pane .header-panel .label {
-    -fx-text-fill: #F1F5F9;
+    -fx-text-fill: #F0DAAE;
+    -fx-font-weight: bold;
 }
 
 .dialog-pane .content {
-    -fx-text-fill: #E2E8F0;
+    -fx-text-fill: #482E1D;
 }
 
 .dialog-pane .label {
-    -fx-text-fill: #CBD5E1;
+    -fx-text-fill: #482E1D;
 }
 
 .dialog-pane .text-field {
-    -fx-background-color: #202B45;
-    -fx-text-fill: white;
-    -fx-prompt-text-fill: #8190AA;
+    -fx-background-color: #FFF8EA;
+    -fx-text-fill: #482E1D;
+    -fx-prompt-text-fill: #A3966A;
     -fx-background-radius: 7;
-    -fx-border-color: #35415D;
+    -fx-border-color: #DCC69E;
     -fx-border-radius: 7;
     -fx-padding: 9;
 }
 
 .dialog-pane .button {
-    -fx-background-color: #6D45D8;
-    -fx-text-fill: white;
+    -fx-background-color: #482E1D;
+    -fx-text-fill: #F0DAAE;
     -fx-background-radius: 7;
     -fx-cursor: hand;
 }
 
 .dialog-pane .button:hover {
-    -fx-background-color: #8B5CF6;
+    -fx-background-color: #895D2B;
 }
 
+/* Scrollbars */
 
-/* Timetable */
-.timetable-scroll {
-    -fx-background: transparent;
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
     -fx-background-color: transparent;
-    -fx-border-color: transparent;
 }
 
-.timetable-header {
-    -fx-background-color: #263449;
-    -fx-text-fill: #ffffff;
+.scroll-bar .thumb {
+    -fx-background-color: #C5A77A;
+    -fx-background-radius: 8;
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+/* Placeholder screens */
+
+.placeholder-screen {
+    -fx-background-color: #F0DAAE;
+}
+
+.placeholder-title {
+    -fx-text-fill: #482E1D;
+    -fx-font-family: "Georgia";
+    -fx-font-size: 27px;
     -fx-font-weight: bold;
-    -fx-padding: 14px 10px;
-    -fx-background-radius: 7px;
 }
 
-.timetable-time {
-    -fx-text-fill: #aebbd0;
+/* Labels */
+
+.label {
+    -fx-text-fill: #482E1D;
+}
+
+/* =========================================
+   OPTISCHEDULE 2.0 - MAIN LAYOUT ADDITIONS
+   ========================================= */
+
+.sidebar-section {
+    -fx-padding: 8 5 5 5;
+    -fx-text-fill: #C7A77C;
+    -fx-font-size: 10px;
     -fx-font-weight: bold;
-    -fx-padding: 10px 5px;
-    -fx-alignment: center;
 }
 
-.timetable-cell {
-    -fx-background-color: #202d40;
-    -fx-background-radius: 9px;
-    -fx-border-color: #34445b;
-    -fx-border-radius: 9px;
+.nav-button {
+    -fx-font-size: 14px;
+    -fx-padding: 12 14;
+    -fx-background-radius: 9;
+    -fx-text-fill: #F0DAAE;
 }
 
-.timetable-course {
-    -fx-text-fill: #8bbcff;
+.nav-button.active {
+    -fx-background-color: #F0DAAE;
+    -fx-text-fill: #482E1D;
+}
+
+.nav-button:hover {
+    -fx-background-color: #895D2B;
+}
+
+.header {
+    -fx-background-color: #FFF7E8;
+    -fx-border-color: #E0CBA7;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 17 27;
+}
+
+.date-label {
+    -fx-text-fill: #895D2B;
+    -fx-font-size: 13px;
     -fx-font-weight: bold;
-    -fx-font-size: 12px;
 }
 
-.timetable-detail {
-    -fx-text-fill: #b6c2d2;
+.notification-dot {
+    -fx-text-fill: #A3966A;
+    -fx-font-size: 14px;
+    -fx-padding: 0 10;
+}
+
+.user-avatar {
+    -fx-background-color: #482E1D;
+    -fx-background-radius: 50;
+    -fx-text-fill: #F0DAAE;
+    -fx-padding: 10;
+    -fx-font-weight: bold;
+}
+
+.user-info {
+    -fx-spacing: 2;
+}
+
+.user-info .label {
+    -fx-text-fill: #895D2B;
     -fx-font-size: 10px;
 }
 
-.timetable-empty {
-    -fx-text-fill: #71839c;
-    -fx-font-size: 23px;
+.welcome-banner {
+    -fx-background-color: linear-gradient(
+        to right,
+        #482E1D,
+        #895D2B
+    );
+    -fx-background-radius: 16;
+    -fx-border-color: #A3966A;
+    -fx-border-radius: 16;
+    -fx-padding: 25;
+}
+
+.welcome-title {
+    -fx-font-family: "Georgia";
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F0DAAE;
+}
+
+.welcome-description {
+    -fx-text-fill: #F8EBD1;
+    -fx-font-size: 13px;
+}
+
+.stat-card {
+    -fx-background-color: #FFF8EA;
+    -fx-background-radius: 14;
+    -fx-border-color: #E0CBA7;
+    -fx-border-radius: 14;
+    -fx-border-width: 1;
+    -fx-padding: 17;
+    -fx-effect: dropshadow(
+        gaussian,
+        #482E1D20,
+        9,
+        0.12,
+        0,
+        3
+    );
+}
+
+.stat-icon {
+    -fx-text-fill: #895D2B;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.stat-title {
+    -fx-text-fill: #895D2B;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.stat-number {
+    -fx-text-fill: #482E1D;
+    -fx-font-family: "Georgia";
+    -fx-font-size: 27px;
+    -fx-font-weight: bold;
+}
+
+.stat-description {
+    -fx-text-fill: #A3966A;
+    -fx-font-size: 10px;
+}
+
+.dashboard-description {
+    -fx-text-fill: #895D2B;
+    -fx-font-size: 13px;
+}
+
+.source-label {
+    -fx-text-fill: #A3966A;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-letter-spacing: 1px;
+}
+
+.dashboard-footer {
+    -fx-text-fill: #A3966A;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+/* ======================================
+   WEEKLY TIMETABLE - ESPRESSO DESIGN
+   ====================================== */
+
+.modern-timetable {
+    -fx-background-color: #FFF8EA;
+    -fx-border-color: #E0CBA7;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.modern-timetable .column-header-background {
+    -fx-background-color: #482E1D;
+}
+
+.modern-timetable .column-header {
+    -fx-background-color: #482E1D;
+    -fx-size: 44px;
+}
+
+.modern-timetable .column-header .label {
+    -fx-text-fill: #F0DAAE;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.modern-timetable .table-row-cell {
+    -fx-background-color: #FFF8EA;
+    -fx-border-color: #E8D8BB;
+    -fx-cell-size: 112px;
+}
+
+.modern-timetable .table-row-cell:odd {
+    -fx-background-color: #FFF4E2;
+}
+
+.modern-timetable .table-cell {
+    -fx-padding: 3px;
+    -fx-border-color: #E8D8BB;
+}
+
+.modern-timetable .table-row-cell:selected {
+    -fx-background-color: #F0DAAE;
+}
+
+.modern-timetable .placeholder .label {
+    -fx-text-fill: #895D2B;
+    -fx-font-size: 13px;
+}
+/* Expanded timetable */
+
+.modern-timetable {
+    -fx-background-color: #FFF8EA;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.modern-timetable .table-row-cell {
+    -fx-cell-size: 76px;
+}
+
+.modern-timetable .table-cell {
+    -fx-padding: 2px;
 }
