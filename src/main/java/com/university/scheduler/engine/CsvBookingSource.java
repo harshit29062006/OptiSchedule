@@ -123,9 +123,11 @@ public class CsvBookingSource implements BookingSource {
                     String baseCode = courseCodeRaw.replaceAll("[A-Z]$", "");
                     char suffix = courseCodeRaw.charAt(courseCodeRaw.length() - 1);
                     PeriodType type = PeriodType.fromSuffix(suffix);
-                    Course course = courseCache.computeIfAbsent(baseCode,
-                        c -> new Course(c, null, null, type));
 
+                    String courseKey = baseCode + "|" + type;
+
+                    Course course = courseCache.computeIfAbsent(courseKey,
+                        key -> new Course(baseCode, null, null, type));
                     Section section = sectionCache.computeIfAbsent(sectionCode,
                         s -> new Section(s, null, 0, null));
 
