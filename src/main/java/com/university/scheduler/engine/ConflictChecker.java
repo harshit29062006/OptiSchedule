@@ -138,6 +138,27 @@ public class ConflictChecker implements Schedulable {
         return Collections.unmodifiableList(scheduleMap.getOrDefault(slot, Collections.emptyList()));
     }
 
+    /** Returns a stable snapshot of all distinct booking sessions. */
+    public List<Booking> getAllBookings() {
+        return scheduleMap.values().stream().flatMap(List::stream).toList();
+    }
+
+    /** Copies the current schedule into an independent checker for optimizer trials. */
+    public ConflictChecker copy() {
+        ConflictChecker copy = new ConflictChecker();
+        for (Booking booking : getAllBookings()) {
+            for (Section section : booking.getSections()) {
+                try {
+                    copy.addBooking(new Booking(section, booking.getCourse(), booking.getFaculty(),
+                        booking.getRoom(), booking.getTimeSlot()));
+                } catch (SchedulingException e) {
+                    throw new IllegalStateException("Current schedule cannot be copied", e);
+                }
+            }
+        }
+        return copy;
+    }
+
     /** Total DISTINCT booking sessions (a combined class counts once, not per section). */
     public int totalBookings() {
         return scheduleMap.values().stream().mapToInt(List::size).sum();
